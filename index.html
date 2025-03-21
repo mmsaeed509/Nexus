@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Nexus Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="artwork/AI-Nexus-Hub.png" type="image/png">
+  <link rel="apple-touch-icon" href="artwork/AI-Nexus-Hub.png">
+</head>
+<body>
+  <!-- Floating elements for sci-fi atmosphere -->
+  <div id="floating-1" class="floating-element"></div>
+  <div id="floating-2" class="floating-element"></div>
+  <div id="floating-3" class="floating-element"></div>
+  
+  <div class="container">
+    <div class="top-bar">
+      <div class="logo-container">
+        <img src="artwork/AI-Nexus-Hub.png" alt="AI Nexus Hub Logo" class="logo">
+      </div>
+      
+      <!-- Futuristic Navbar -->
+      <nav class="sci-fi-navbar">
+        <div class="nav-data-stream"></div>
+        <div class="nav-container">
+          <div class="nav-circuit left"></div>
+          <ul class="nav-links">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-text squares-font" data-text="HOME">HOME</span>
+                <span class="tech-dot"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="nav-icon">🔮</span>
+                <span class="nav-text squares-font" data-text="EXPLORE">EXPLORE</span>
+                <span class="tech-dot"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="nav-icon">🧠</span>
+                <span class="nav-text squares-font" data-text="MODELS">MODELS</span>
+                <span class="tech-dot"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="nav-icon">🛠️</span>
+                <span class="nav-text squares-font" data-text="TOOLS">TOOLS</span>
+                <span class="tech-dot"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="nav-icon">📚</span>
+                <span class="nav-text squares-font" data-text="LEARN">LEARN</span>
+                <span class="tech-dot"></span>
+              </a>
+            </li>
+          </ul>
+          <div class="nav-circuit right"></div>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+            <span class="toggle-glow"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    
+    <header class="header">
+      <div class="header-top">
+        <div class="header-content">
+          <h1 class="title squares-font">AI Nexus Hub</h1>
+          <p class="subtitle squares-light-font">
+            Explore the cutting edge of artificial intelligence. Discover tools shaping the future.
+          </p>
+        </div>
+        
+        <div class="search-container">
+          <div class="search-wrapper">
+            <input type="text" id="searchInput" class="search-input squares-light-font" placeholder="Search AI tools..." autocomplete="off">
+            <button id="searchButton" class="search-button squares-font">
+              <span class="search-button-text">SEARCH</span>
+              <span class="search-button-glow"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="tools-grid" id="toolsContainer">
+        <!-- Tools will be dynamically inserted here via JavaScript -->
+      </div>
+    </main>
+
+    <footer class="footer squares-light-font">
+      <span class="squares-font">Powered by Mr. [00]xWol[F] 🇵🇸 Mahmoud Mohammed</span> | AI Nexus Hub &copy; <span id="currentYear"></span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
