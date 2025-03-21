@@ -14,7 +14,7 @@ const aiTools = [
     description: 'AI platform focused on deep learning research and applications.',
     category: 'Research Platform',
     websiteUrl: 'https://chat.deepseek.com/',
-    iconUrl: 'https://static.deepseek.com/favicon/favicon-196x196.png'
+    iconUrl: 'icons/deepseek.svg'
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const aiTools = [
     description: 'Generative AI creating images from textual descriptions.',
     category: 'Image Generation',
     websiteUrl: 'https://www.midjourney.com/',
-    iconUrl: 'https://assets-global.website-files.com/6417b97a3eeb051d8ff2fd84/64340d093371d1ab0ccdf241_midjourney_logo-p-500.png'
+    iconUrl: 'icons/Midjourney.png'
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ const aiTools = [
     description: 'Open-source text-to-image model for generating detailed visuals.',
     category: 'Image Generation',
     websiteUrl: 'https://stablediffusionweb.com/',
-    iconUrl: 'https://stablediffusionweb.com/favicon-32x32.png'
+    iconUrl: 'https://stablediffusionweb.com/images/logo.png'
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ const aiTools = [
     description: 'AI pair programmer that assists developers in writing code.',
     category: 'Developer Tool',
     websiteUrl: 'https://github.com/copilot',
-    iconUrl: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png'
+    iconUrl: 'icons/github-copilot.png'
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ const aiTools = [
     description: 'Platform for artists and creators using AI for media synthesis.',
     category: 'Creative Suite',
     websiteUrl: 'https://app.runwayml.com/',
-    iconUrl: 'https://cdn.sanity.io/images/fuvbjjlp/production/e653776a22a650dd89c3d5fcb8a8b41c09f18b05-1877x469.png'
+    iconUrl: 'icons/Runway_Black_Symbol_SVG.svg'
   },
   {
     id: 7,
@@ -54,7 +54,7 @@ const aiTools = [
     description: 'Intelligent conversational AI with strong contextual understanding.',
     category: 'Language Model',
     websiteUrl: 'https://kimi.moonshot.cn/',
-    iconUrl: 'https://kimi.moonshot.cn/apple-touch-icon.png'
+    iconUrl: 'icons/kimiai.avif'
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ const aiTools = [
     description: 'Alibaba\'s conversational AI model with multilingual capabilities.',
     category: 'Language Model',
     websiteUrl: 'https://chat.qwen.ai/',
-    iconUrl: 'https://chat.qwen.ai/favicon.png'
+    iconUrl: 'icons/qwen.png'
   },
   {
     id: 11,
@@ -86,7 +86,7 @@ const aiTools = [
     description: 'AI tool for generating UI designs and website components from text descriptions.',
     category: 'Design Tool',
     websiteUrl: 'https://v0.dev/',
-    iconUrl: 'https://v0.dev/favicon.ico'
+    iconUrl: 'icons/v0.png'
   },
   {
     id: 12,
@@ -94,7 +94,7 @@ const aiTools = [
     description: 'xAI\'s conversational model with real-time data access and unique personality.',
     category: 'Language Model',
     websiteUrl: 'https://grok.com/',
-    iconUrl: 'https://grok.com/favicon.ico'
+    iconUrl: 'icons/Grok.webp'
   },
   {
     id: 13,
@@ -102,7 +102,7 @@ const aiTools = [
     description: 'French AI startup offering powerful open models with competitive performance.',
     category: 'Language Model',
     websiteUrl: 'https://chat.mistral.ai/',
-    iconUrl: 'https://chat.mistral.ai/favicon-32x32.png'
+    iconUrl: 'icons/mistral-ai.png'
   },
   {
     id: 14,
@@ -110,7 +110,7 @@ const aiTools = [
     description: 'Meta\'s AI assistant integrated across Meta apps and services.',
     category: 'Language Model',
     websiteUrl: 'https://www.meta.ai/',
-    iconUrl: 'https://static.xx.fbcdn.net/rsrc.php/y5/r/34InQ1xprbA.svg'
+    iconUrl: 'icons/metaai.jpg'
   },
   {
     id: 15,
@@ -118,7 +118,7 @@ const aiTools = [
     description: 'Platform for creating AI-generated images on Instagram.',
     category: 'Image Generation',
     websiteUrl: 'https://aistudio.instagram.com/',
-    iconUrl: 'https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico'
+    iconUrl: 'icons/metaai.jpg'
   },
   {
     id: 16,
@@ -142,7 +142,7 @@ const aiTools = [
     description: 'Quick AI-powered digital content creation tool.',
     category: 'Content Creation',
     websiteUrl: 'https://bolt.new/',
-    iconUrl: 'https://bolt.new/favicon.ico'
+    iconUrl: 'icons/bolt.svg'
   },
   {
     id: 19,
@@ -166,7 +166,7 @@ const aiTools = [
     description: 'AI art generator specializing in text rendering and typography.',
     category: 'Image Generation',
     websiteUrl: 'https://ideogram.ai/',
-    iconUrl: 'https://ideogram.ai/favicon.ico'
+    iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEVHcEz///8AAABTU1P////////////////////////s7Oz29vZiYmIQEBAeHh7h4eHT09NCQkItLS3FxcV0dHQ6Ojq0tLSDg4OmpqaWlpZCl/6SAAAACnRSTlMA////ikVE3hjrhwjMiwAAARVJREFUKJF9UwuygyAQg2BfLX8UxN7/om+BYrW2ZkadJRp2Q2SMjcOdn3AfRka4Pc5UweNG3/3giB3ZsCsVX2IKeX6VA3vv5wADTBOgVduXvb+TIlhoKb2Abis7svAWjh4ay4EkTVJVM3T2fEXye1JGrXWkZUIoN3+SdQaLNxB+heikTOigzTJoFoGNjKIBWKmiazahk0rJBmeMLzMmU/stpE4pFCTNF1ibFbco0o2cXijklECKztpNVnZZSyPoHw0ZPKkZGuVZHfwyCs1CZrkvJtTFOVujdqQq9mWyrx1mPNi3Gb/wGEs/Z1lpSdaW9+LHedbDFtLDivCsWTjGhDJSzekxOQZM5qB9L4fraLK/i1Bf/Q7/6CUPuCjtwm8AAAAASUVORK5CYII='
   },
   {
     id: 22,
@@ -183,6 +183,62 @@ const aiTools = [
     category: 'Privacy-Focused AI',
     websiteUrl: 'http://oniongpt6lntsoztgylhju7nmqedlq6fjexe55z327lmxyae3nutlyad.onion/',
     iconUrl: 'https://www.torproject.org/static/images/favicon/favicon.ico'
+  },
+  {
+    id: 24,
+    name: 'Replit',
+    description: 'Browser-based IDE with AI coding assistance and collaborative development features.',
+    category: 'Development Platform',
+    websiteUrl: 'https://replit.com/',
+    iconUrl: 'https://play-lh.googleusercontent.com/baV9RL2D0iV8JkTtCzSxeLf6XxCJMWQYbyXMqyQfc0OQGtjkCyUenUbLb5tefYfMxfU=w240-h480-rw'
+  },
+  {
+    id: 25,
+    name: 'Jan AI',
+    description: 'Open-source desktop app for running local LLMs with a user-friendly interface.',
+    category: 'Desktop LLM',
+    websiteUrl: 'https://jan.ai/',
+    iconUrl: 'https://jan.ai/favicon.ico'
+  },
+  {
+    id: 26,
+    name: 'Msty',
+    description: 'Desktop application for running and fine-tuning language models locally.',
+    category: 'Desktop LLM',
+    websiteUrl: 'https://msty.app/',
+    iconUrl: 'https://msty.app/favicon.ico'
+  },
+  {
+    id: 27,
+    name: 'LM Studio',
+    description: 'Desktop app for running local and private large language models with an intuitive UI.',
+    category: 'Desktop LLM',
+    websiteUrl: 'https://lmstudio.ai/',
+    iconUrl: 'icons/lmstudio.webp'
+  },
+  {
+    id: 28,
+    name: 'Junie',
+    description: 'JetBrains\' AI assistant that integrates with their IDEs for coding and development.',
+    category: 'AI Coding IDE',
+    websiteUrl: 'https://www.jetbrains.com/junie/',
+    iconUrl: 'https://blog.jetbrains.com/wp-content/uploads/2025/01/Group-10.svg'
+  },
+  {
+    id: 29,
+    name: 'Cursor AI',
+    description: 'AI-powered code editor built on VSCode with chat, edit, and generation capabilities.',
+    category: 'AI Coding IDE',
+    websiteUrl: 'https://www.cursor.com/',
+    iconUrl: 'icons/cursor.png'
+  },
+  {
+    id: 30,
+    name: 'Windsurf',
+    description: 'AI-powered coding assistant by Codeium with advanced code understanding and generation.',
+    category: 'AI Coding IDE',
+    websiteUrl: 'https://codeium.com/download',
+    iconUrl: 'https://codeium.com/favicon.ico'
   }
 ];
 
