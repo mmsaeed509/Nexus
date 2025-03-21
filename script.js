@@ -272,6 +272,30 @@ const aiTools = [
     websiteUrl: 'https://github.com/stackblitz-labs/bolt.diy',
     iconUrl: 'icons/Bolt.DIY.png'
   },
+  {
+    id: 35,
+    name: 'Bind AI IDE',
+    description: 'AI code editor with built-in execution and support for 15+ models including Claude 3.5, GPT-4o, and Llama 3.',
+    category: 'AI Coding IDE',
+    websiteUrl: 'https://www.getbind.co/',
+    iconUrl: 'https://cdn.prod.website-files.com/650e15fb107e3d4aec2c591a/66f79211051c24799472b259_logo-dark.svg'
+  },
+  {
+    id: 36,
+    name: 'ChatGPT Operator',
+    description: 'A platform for building autonomous AI agents that can perform complex tasks across multiple applications.',
+    category: 'AI Agents',
+    websiteUrl: 'https://operator.chatgpt.com/',
+    iconUrl: 'https://operator.chatgpt.com/favicon.ico'
+  },
+  {
+    id: 37,
+    name: 'Genspark',
+    description: 'AI-powered platform for creating personalized user experiences and intelligent customer interactions.',
+    category: 'AI Customer Experience',
+    websiteUrl: 'https://www.genspark.ai/',
+    iconUrl: 'https://www.genspark.ai/favicon.ico'
+  },
 ];
 
 // Initialize the page
