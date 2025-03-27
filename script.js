@@ -145,7 +145,7 @@ const aiTools = [
     id: 28,
     name: 'Junie',
     description: 'JetBrains\' AI assistant that integrates with their IDEs for coding and development.',
-    category: 'Development & Coding Tools',
+    category: 'AI Agent IDE',
     websiteUrl: 'https://www.jetbrains.com/junie/',
     iconUrl: 'https://blog.jetbrains.com/wp-content/uploads/2025/01/Group-10.svg'
   },
@@ -153,7 +153,7 @@ const aiTools = [
     id: 29,
     name: 'Cursor AI',
     description: 'AI-powered code editor built on VSCode with chat, edit, and generation capabilities.',
-    category: 'Development & Coding Tools',
+    category: 'AI Agent IDE',
     websiteUrl: 'https://www.cursor.com/',
     iconUrl: 'icons/cursor.png'
   },
@@ -161,7 +161,7 @@ const aiTools = [
     id: 30,
     name: 'Windsurf',
     description: 'AI-powered coding assistant by Codeium with advanced code understanding and generation.',
-    category: 'Development & Coding Tools',
+    category: 'AI Agent IDE',
     websiteUrl: 'https://codeium.com/download',
     iconUrl: 'https://codeium.com/favicon.ico'
   },
@@ -169,7 +169,7 @@ const aiTools = [
     id: 35,
     name: 'Bind AI IDE',
     description: 'AI code editor with built-in execution and support for 15+ models including Claude 3.5, GPT-4o, and Llama 3.',
-    category: 'Development & Coding Tools',
+    category: 'AI Agent IDE',
     websiteUrl: 'https://www.getbind.co/',
     iconUrl: 'https://cdn.prod.website-files.com/650e15fb107e3d4aec2c591a/66f79211051c24799472b259_logo-dark.svg'
   },
@@ -177,7 +177,7 @@ const aiTools = [
     id: 40,
     name: 'Devin',
     description: 'Collaborative AI teammate for engineering teams, capable of handling complex development tasks and code migrations.',
-    category: 'Development & Coding Tools',
+    category: 'AI Agent IDE',
     websiteUrl: 'https://devin.ai/',
     iconUrl: 'https://devin.ai/favicon.ico'
   },
@@ -240,6 +240,14 @@ const aiTools = [
     category: 'Content Creation & Media',
     websiteUrl: 'https://gamma.app/',
     iconUrl: 'icons/gamma.svg'
+  },
+  {
+    id: 43,
+    name: 'FreePik',
+    description: 'AI-powered platform for creating and accessing high-quality design resources, including vectors, photos, and PSD files.',
+    category: 'Content Creation & Media',
+    websiteUrl: 'https://www.freepik.com/',
+    iconUrl: 'https://www.freepik.com/favicon.ico'
   },
 
   // AI Platforms & Infrastructure
@@ -305,7 +313,7 @@ const aiTools = [
     id: 36,
     name: 'ChatGPT Operator',
     description: 'A platform for building autonomous AI agents that can perform complex tasks across multiple applications.',
-    category: 'Business & Productivity',
+    category: 'AI Agent',
     websiteUrl: 'https://operator.chatgpt.com/',
     iconUrl: 'https://operator.chatgpt.com/favicon.ico'
   },
@@ -313,7 +321,7 @@ const aiTools = [
     id: 37,
     name: 'Genspark',
     description: 'AI-powered platform for creating personalized user experiences and intelligent customer interactions.',
-    category: 'Business & Productivity',
+    category: 'Content Creation & Media',
     websiteUrl: 'https://www.genspark.ai/',
     iconUrl: 'https://www.genspark.ai/favicon.ico'
   },
@@ -321,7 +329,7 @@ const aiTools = [
     id: 39,
     name: 'Tome',
     description: 'AI assistant for sales that helps identify strategic initiatives and key decision makers for account engagement.',
-    category: 'Business & Productivity',
+    category: 'Content Creation & Media',
     websiteUrl: 'https://tome.app/',
     iconUrl: 'https://tome.app/favicon.ico'
   },
@@ -341,7 +349,7 @@ const aiTools = [
     id: 33,
     name: 'Manus',
     description: 'AI-powered hand tracking and haptic technology for immersive VR/AR experiences.',
-    category: 'VR/AR & Emerging Tech',
+    category: 'AI Agent',
     websiteUrl: 'https://manus.im/',
     iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFTElEQVR4AbVXA3czWBBd/5b11ratz7Zt27Zt1rYRp7b5NbaTfbfbnJO6Tbo95zbJ09yZNzNv5jv8GQwG4AcCK4LTBGkEVAL6LIGCM4fPtoYsyDQV/gvBIoIMAgaAjbMMnMmEDMgaljlE4HuCxQTlWDDZIXq9nq7T6UaP04AZEGFCFmRCNghYg9VUwjUaDePhg3vdly6c65dIJEwjoZqaqtrmpsbqGVrDaAkrEDg9kclNNZNIxMxFC+ZInB1tdBRKeT3mamtrakND/JWrVy0TgZQZV3IaBNLGI9DV1VkVF/ulrb29rcpI5OiRg4PW//xuePrkYRfGrl652Gf192+Ggwf2cGAhMwikgQBlPM3v373dY2P1hyEqIkQeH/e1DeMfP7xrNwqERZYuni9xcrDW5+XlNBlJzhDU7yaahHm3bl4vcLD7R+/m4qBNSIhr7exor9qxbTP/06f37RwOhx0dGSoPDwtU9Pb2VpobHRMSgEYymYz56OG9bj8fD/WD+3e6MaZSqRiIBKCwIK+xuLiwUaFQMPr7+yo5nEG2VqudLQLwfDWjva2tOj09taW1taVap9OaOiZAYzLodTu2b+aHEWeMjgyR371zs0culzEtJgCBB/bv4QQH+qhgAZh7356d3ERyFZzBQTaEV1dV1kaGByvgmL7ebmo3F3st8QldQnxcK+bNJiCTSZnbtm7k42A/H/ch4d6erho4pb3t3/r5c6NkuJL1a1cJsWb71k385uamamNUnDl9YsASC9BqqqtqPd2dNEEBPioajVrP5/NYdXW1Na9fvehcvXKpGLkAgoHIiGAFhGMfBIPAnds3eiyxAK2xob7Gh5jU19tdnZ+X2wSHGz6QKhaLmRnpqc3QOiw0QJmclNCKOeKITCQkRE1OdlaTRVegVqsZp08e+2Zr/afBy8NFs3/vLi7JBa0f3r9tP3xoHwehuGf3dt75c6cH2tpaq7FHpVIy1q9bJcQeWMpiJ+Tz+azr1y71Bfp7qXAoNMP921j9Dj8wwB8wHhMdJi/Izx3S+Mvnj21ITBHhQQoQszgMEdO4X4QZ7js02F/54sXTzqzM9Oa3b151wAlBIjoqTI4kpST5YMum9QKQe/f2dQdIAWYTAJRKJWPj+jVCO5u/DG9evzQ9lCYgVtq0Ya0QVnn29HEXfOTenVs9cMTjxw4NlpWWNLwkhIUCAstsAsTpWOQVlMK0GRlpzaNeSuqnj+/bofE+4icYe/XyeSd+uzrbab08nDW4OuQOzJlFALhw/kw/Dl1CHh8ej8sWEI2yszKbW1uaq9+/e9OBa9i9cxsPa5GSr1y+0BcRFqTA+LBTdlhCgIb3n2ikmxsTIUMYfibOBs38fT3USFQg9/DB3W4TIbRbN6/1Gp03wVILdHd3VYWFBChA4uWLZ50VFWUNu3Zu5SH/B5Ao2UtSNDQ3rhcI+KxlSxZI4Lh4SSsqyhssIgDAyVycbHVDqXhetOzY0YODyHipKUktXC6HbVofom6Az8AyiBwogHmLCOAZRjJavmyR2NXFXgftEBk+Xq4ajJ08cfTbi+dPO2/euNob6O+tgvmxZuOGNUIkKYsJGDUUiUQsKqWiHhbZt3cnFxXT8NswnJyAP4fI4fPBvf/qiMkImNOA0AC8EQMDA5WlJcUNz58+6ZxHXklT4bAOm82qm4QAZcKi1AxC1LjYr62O9lZ6EIBFYCG8K1MVpadnqxMSCYUs1BHQHjVEFSlYQG6qstzKtDGxFChQUc7Xk/ptGo2J9bRaM3N9ZLqt2ejmlPn/NafAqOZ0VHtubdKeU2ZRONWkPbcybc//BZnHVLQkHQqfAAAAAElFTkSuQmCC'
   }
@@ -517,7 +525,7 @@ function renderAITools(toolsToRender = aiTools, withAnimation = false) {
         <p class="tool-description">${tool.description}</p>
         <div class="tool-footer">
           <span class="tool-category">${tool.category}</span>
-          <span class="visit-site">Open Tool</span>
+          <span class="visit-site">Click to Open Tool</span>
         </div>
       </div>
     `;
