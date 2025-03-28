@@ -50,9 +50,12 @@ AI Nexus Hub is an immersive web application that showcases various artificial i
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="screenshots/homepage.png" alt="AI Nexus Hub Homepage" width="100%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
-</p>
+<div align="center">
+  <div style="max-height: 500px; overflow-y: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+    <img src="screenshots/homepage.png" alt="AI Nexus Hub Homepage" width="100%" style="display: block;">
+  </div>
+  <p><i>Scroll to see the full screenshot</i></p>
+</div>
 
 ## 🚀 Getting Started
 
