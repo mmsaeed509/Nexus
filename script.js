@@ -409,24 +409,36 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup category filtering
   setupCategoryFilter();
   
-  // Add event listener for mobile menu toggle
+  // Mobile menu functionality
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const navLinksItems = document.querySelectorAll('.nav-link');
   
   if (mobileMenuToggle && navLinks) {
     mobileMenuToggle.addEventListener('click', function() {
-      mobileMenuToggle.classList.toggle('active');
+      this.classList.toggle('active');
       navLinks.classList.toggle('active');
     });
     
-    // Close mobile menu when clicking outside
+    // Close menu when clicking outside
     document.addEventListener('click', function(event) {
-      const isClickInside = navLinks.contains(event.target) || mobileMenuToggle.contains(event.target);
-      
-      if (!isClickInside && navLinks.classList.contains('active')) {
-        navLinks.classList.remove('active');
+      if (!navLinks.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
         mobileMenuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
       }
+    });
+    
+    // Close menu when clicking a link
+    navLinksItems.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+    
+    // Prevent menu from closing when clicking inside it
+    navLinks.addEventListener('click', function(event) {
+      event.stopPropagation();
     });
   }
 });
