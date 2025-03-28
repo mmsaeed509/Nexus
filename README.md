@@ -5,17 +5,40 @@
 </p>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
 </div>
 
 <p align="center">
-  <b>A cutting-edge directory of AI tools with a futuristic sci-fi interface</b>
+  <b>A comprehensive directory of AI tools with a futuristic sci-fi interface</b>
 </p>
 
-AI Nexus Hub is an immersive web application that showcases various artificial intelligence tools and platforms in a visually stunning, cyberpunk-inspired interface. Designed with advanced CSS animations, interactive elements, and responsive layouts, this project serves as both a practical directory and a demonstration of modern web design techniques.
+AI Nexus Hub is an immersive web application that showcases various artificial intelligence tools and platforms in a visually stunning, cyberpunk-inspired interface. With over 40 carefully curated AI tools across multiple categories, this project serves as both a practical directory and a demonstration of modern web design techniques.
+
+## 🌟 Features
+
+- **Comprehensive AI Tool Directory**: Browse through 40+ AI tools across multiple categories
+- **Smart Search**: Real-time search functionality with category filtering
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Interactive UI**: Smooth animations and transitions for an engaging experience
+- **Category Filtering**: Easy navigation through different AI tool categories
+- **Mobile-Friendly**: Optimized for mobile devices with a responsive menu
+- **Fallback Icons**: Graceful handling of missing tool icons
+- **Performance Optimized**: Fast loading and smooth interactions
+
+## 🎯 Categories
+
+- Language Models & Chatbots
+- Image Generation & Art
+- Development & Coding Tools
+- Local & Desktop AI
+- Content Creation & Media
+- AI Platforms & Infrastructure
+- Business & Productivity
+- Privacy & Security
+- VR/AR & Emerging Tech
 
 ## 🌠 Live Demo
 
@@ -62,6 +85,7 @@ AI-Nexus-Hub/
 ├── artwork/                 # Images and assets
 │   ├── AI-Nexus-Hub.png     # Logo
 │   └── default-icon.svg     # Fallback icon
+├── icons/                   # Tool icons
 ├── fonts/                   # Custom font files
 │   ├── Squares-Bold.otf     # Bold sci-fi font
 │   └── Squares-Light.otf    # Light sci-fi font
@@ -77,7 +101,7 @@ Extend the directory by adding new tools to the `aiTools` array in `script.js`:
 
 ```javascript
 {
-  id: 24, // Increment from highest existing ID
+  id: 49, // Increment from highest existing ID
   name: 'Your Tool Name',
   description: 'A compelling description of what this AI tool does.',
   category: 'Tool Category', // Use existing categories for consistency
@@ -98,39 +122,29 @@ The visual style can be modified by editing key CSS variables in `styles.css`:
   --accent-color: #ff0080;
   --background-start: #0f0f1a;
   --background-end: #26075b;
-  /* Additional variables... */
 }
 ```
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can contribute:
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-- Fork the repository
-- Create a feature branch with your **_username_** `dev-${GITHUB-USERNAME}` name (e.g. `dev-mmsaeed509`)
-   - `git checkout -b dev-mmsaeed509`
-- Commit your changes 
-   - `./git-push.sh -m "your commit msg"`
-- Push to the branch 
-   - `git push origin dev-mmsaeed509`
-- Open a pull request
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Please ensure your code follows the project's style and includes appropriate documentation.
-
-## 📜 License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Developer
+## 🙏 Acknowledgments
 
-<div align="center">
-  <a href="https://github.com/mmsaeed509">
-    <img src="https://img.shields.io/badge/Created_by-Mahmoud_Mohammed-0077B5?style=for-the-badge&logo=github&logoColor=white" alt="Developer">
-  </a>
-</div>
+- All AI tool creators and providers
+- Contributors and maintainers
+- The open-source community
 
 ---
 
-<p align="center">
-  <sub>If you found this project useful, consider giving it a ⭐️ on GitHub!</sub>
-</p>
+<p align="center">Made with ❤️ by <a href="https://github.com/mmsaeed509">mmsaeed509</a></p>
