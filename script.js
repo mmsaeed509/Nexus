@@ -305,7 +305,7 @@ const aiTools = [
     id: 32,
     name: 'Chat2DB',
     description: 'AI-powered SQL generator and database client that connects to multiple data sources.',
-    category: 'Business & Productivity',
+    category: 'AI Agent IDE',
     websiteUrl: 'https://chat2db.ai/',
     iconUrl: 'icons/Chat2DB.png'
   },
