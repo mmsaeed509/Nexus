@@ -352,6 +352,46 @@ const aiTools = [
     category: 'AI Agent',
     websiteUrl: 'https://manus.im/',
     iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFTElEQVR4AbVXA3czWBBd/5b11ratz7Zt27Zt1rYRp7b5NbaTfbfbnJO6Tbo95zbJ09yZNzNv5jv8GQwG4AcCK4LTBGkEVAL6LIGCM4fPtoYsyDQV/gvBIoIMAgaAjbMMnMmEDMgaljlE4HuCxQTlWDDZIXq9nq7T6UaP04AZEGFCFmRCNghYg9VUwjUaDePhg3vdly6c65dIJEwjoZqaqtrmpsbqGVrDaAkrEDg9kclNNZNIxMxFC+ZInB1tdBRKeT3mamtrakND/JWrVy0TgZQZV3IaBNLGI9DV1VkVF/ulrb29rcpI5OiRg4PW//xuePrkYRfGrl652Gf192+Ggwf2cGAhMwikgQBlPM3v373dY2P1hyEqIkQeH/e1DeMfP7xrNwqERZYuni9xcrDW5+XlNBlJzhDU7yaahHm3bl4vcLD7R+/m4qBNSIhr7exor9qxbTP/06f37RwOhx0dGSoPDwtU9Pb2VpobHRMSgEYymYz56OG9bj8fD/WD+3e6MaZSqRiIBKCwIK+xuLiwUaFQMPr7+yo5nEG2VqudLQLwfDWjva2tOj09taW1taVap9OaOiZAYzLodTu2b+aHEWeMjgyR371zs0culzEtJgCBB/bv4QQH+qhgAZh7356d3ERyFZzBQTaEV1dV1kaGByvgmL7ebmo3F3st8QldQnxcK+bNJiCTSZnbtm7k42A/H/ch4d6erho4pb3t3/r5c6NkuJL1a1cJsWb71k385uamamNUnDl9YsASC9BqqqtqPd2dNEEBPioajVrP5/NYdXW1Na9fvehcvXKpGLkAgoHIiGAFhGMfBIPAnds3eiyxAK2xob7Gh5jU19tdnZ+X2wSHGz6QKhaLmRnpqc3QOiw0QJmclNCKOeKITCQkRE1OdlaTRVegVqsZp08e+2Zr/afBy8NFs3/vLi7JBa0f3r9tP3xoHwehuGf3dt75c6cH2tpaq7FHpVIy1q9bJcQeWMpiJ+Tz+azr1y71Bfp7qXAoNMP921j9Dj8wwB8wHhMdJi/Izx3S+Mvnj21ITBHhQQoQszgMEdO4X4QZ7js02F/54sXTzqzM9Oa3b151wAlBIjoqTI4kpST5YMum9QKQe/f2dQdIAWYTAJRKJWPj+jVCO5u/DG9evzQ9lCYgVtq0Ya0QVnn29HEXfOTenVs9cMTjxw4NlpWWNLwkhIUCAstsAsTpWOQVlMK0GRlpzaNeSuqnj+/bofE+4icYe/XyeSd+uzrbab08nDW4OuQOzJlFALhw/kw/Dl1CHh8ej8sWEI2yszKbW1uaq9+/e9OBa9i9cxsPa5GSr1y+0BcRFqTA+LBTdlhCgIb3n2ikmxsTIUMYfibOBs38fT3USFQg9/DB3W4TIbRbN6/1Gp03wVILdHd3VYWFBChA4uWLZ50VFWUNu3Zu5SH/B5Ao2UtSNDQ3rhcI+KxlSxZI4Lh4SSsqyhssIgDAyVycbHVDqXhetOzY0YODyHipKUktXC6HbVofom6Az8AyiBwogHmLCOAZRjJavmyR2NXFXgftEBk+Xq4ajJ08cfTbi+dPO2/euNob6O+tgvmxZuOGNUIkKYsJGDUUiUQsKqWiHhbZt3cnFxXT8NswnJyAP4fI4fPBvf/qiMkImNOA0AC8EQMDA5WlJcUNz58+6ZxHXklT4bAOm82qm4QAZcKi1AxC1LjYr62O9lZ6EIBFYCG8K1MVpadnqxMSCYUs1BHQHjVEFSlYQG6qstzKtDGxFChQUc7Xk/ptGo2J9bRaM3N9ZLqt2ejmlPn/NafAqOZ0VHtubdKeU2ZRONWkPbcybc//BZnHVLQkHQqfAAAAAElFTkSuQmCC'
+  },
+  {
+    id: 44,
+    name: 'OpenWebUI',
+    description: 'User-friendly web interface for Ollama, supporting multiple models and providing a modern chat experience.',
+    category: 'Local & Desktop AI',
+    websiteUrl: 'https://github.com/open-webui/open-webui',
+    iconUrl: 'https://github.com/open-webui/open-webui/raw/main/static/logo.png'
+  },
+  {
+    id: 45,
+    name: 'Ollama',
+    description: 'Open-source platform for running large language models locally, with support for multiple models and easy deployment.',
+    category: 'Language Models & Chatbots',
+    websiteUrl: 'https://github.com/ollama/ollama',
+    iconUrl: 'https://ollama.ai/favicon.ico'
+  },
+  {
+    id: 46,
+    name: 'PrivateGPT',
+    description: 'Secure and private local AI system for document analysis and question answering, with no internet connection required.',
+    category: 'Local & Desktop AI',
+    websiteUrl: 'https://github.com/imartinez/privateGPT',
+    iconUrl: 'https://github.com/imartinez/privateGPT/raw/main/docs/private-gpt.png'
+  },
+  {
+    id: 47,
+    name: 'Auto-GPT',
+    description: 'Experimental open-source autonomous AI agent that can perform complex tasks by breaking them down into subtasks.',
+    category: 'AI Agent',
+    websiteUrl: 'https://github.com/Torantulino/Auto-GPT',
+    iconUrl: 'https://github.com/Torantulino/Auto-GPT/raw/main/docs/logo.png'
+  },
+  {
+    id: 48,
+    name: 'DeepMotion',
+    description: 'AI-powered motion capture and animation platform for creating realistic human movements in digital content.',
+    category: 'Video & Animation',
+    websiteUrl: 'https://www.deepmotion.com/',
+    iconUrl: 'https://www.deepmotion.com/favicon.ico'
   }
 ];
 
