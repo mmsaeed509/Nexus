@@ -1,7 +1,7 @@
 # 🌌 AI Nexus Hub
 
 <p align="center">
-  <img src="artwork/AI-Nexus-Hub.png" alt="AI Nexus Hub" width="300">
+  <img src="artwork/AI-Nexus-Hub.png" alt="AI Nexus Hub" width="200">
 </p>
 
 <div align="center">
