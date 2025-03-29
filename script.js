@@ -260,6 +260,14 @@ const aiTools = [
     iconUrl: 'icons/deepseek.svg'
   },
   {
+    id: 49,
+    name: 'DeepSite',
+    description: 'AI platform focused on deep learning research and applications.',
+    category: 'AI Platforms & Infrastructure',
+    websiteUrl: 'https://huggingface.co/spaces/enzostvs/deepsite',
+    iconUrl: 'icons/DeepSite.svg'
+  },
+  {
     id: 17,
     name: 'Weights',
     description: 'Platform for discovering, training and deploying open source AI models.',
