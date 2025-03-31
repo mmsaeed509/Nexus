@@ -498,37 +498,8 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCategoryFilter();
   
   // Mobile menu functionality
-  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  const navLinksItems = document.querySelectorAll('.nav-link');
-  
-  if (mobileMenuToggle && navLinks) {
-    mobileMenuToggle.addEventListener('click', function() {
-      this.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-      if (!navLinks.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
-        mobileMenuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-      }
-    });
-    
-    // Close menu when clicking a link
-    navLinksItems.forEach(link => {
-      link.addEventListener('click', function() {
-        mobileMenuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
-    });
-    
-    // Prevent menu from closing when clicking inside it
-    navLinks.addEventListener('click', function(event) {
-      event.stopPropagation();
-    });
-  }
+  setupMobileMenu();
+  setupNavigation();
 });
 
 // Function to setup category filtering
@@ -559,9 +530,9 @@ function setupCategoryFilter() {
       // Close mobile menu if open
       const mobileMenu = document.querySelector('.nav-links');
       const mobileToggle = document.querySelector('.mobile-menu-toggle');
-      if (mobileMenu.classList.contains('active')) {
+      if (mobileMenu && mobileMenu.classList.contains('active')) {
         mobileMenu.classList.remove('active');
-        mobileToggle.classList.remove('active');
+        if (mobileToggle) mobileToggle.classList.remove('active');
       }
     });
   });
@@ -790,4 +761,83 @@ function createMatrixRain() {
 }
 
 // Initialize Matrix rain effect
-createMatrixRain(); 
+createMatrixRain();
+
+// Mobile Menu Functionality
+function setupMobileMenu() {
+  const navContainer = document.querySelector('.nav-container');
+  const navLinks = document.querySelector('.nav-links');
+  
+  // Create mobile menu toggle button
+  const mobileMenuToggle = document.createElement('button');
+  mobileMenuToggle.className = 'mobile-menu-toggle';
+  mobileMenuToggle.innerHTML = '<span></span><span></span><span></span>';
+  mobileMenuToggle.setAttribute('aria-label', 'Toggle navigation menu');
+  
+  // Insert toggle button before nav-links
+  navContainer.insertBefore(mobileMenuToggle, navLinks);
+
+  // Toggle menu on button click
+  mobileMenuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    mobileMenuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+    }
+  });
+
+  // Close menu when clicking a link
+  navLinks.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+
+  // Prevent menu from closing when clicking inside it
+  navLinks.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+}
+
+// Enhanced Navigation Functionality
+function setupNavigation() {
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  // Add active state to current category
+  function updateActiveCategory() {
+    const activeCategory = document.querySelector('.nav-link.active');
+    if (activeCategory) {
+      const category = activeCategory.getAttribute('data-category');
+      const filteredTools = category === 'all' 
+        ? aiTools 
+        : aiTools.filter(tool => tool.category === category);
+      renderAITools(filteredTools);
+    }
+  }
+
+  // Initialize with 'all' category
+  const allToolsLink = document.querySelector('.nav-link[data-category="all"]');
+  if (allToolsLink) {
+    allToolsLink.classList.add('active');
+    updateActiveCategory();
+  }
+
+  // Update active category on window resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      const mobileMenu = document.querySelector('.nav-links');
+      const mobileToggle = document.querySelector('.mobile-menu-toggle');
+      if (mobileMenu && mobileToggle) {
+        mobileMenu.classList.remove('active');
+        mobileToggle.classList.remove('active');
+      }
+    }
+  });
+} 
