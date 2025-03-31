@@ -1,8 +1,9 @@
-// AI Tools data
-const aiTools = [
-  // Language Models & Chatbots
+// AI Tools data organized by categories
+
+// Language Models & Chatbots
+const languageModels = [
   {
-    id: 1,
+    languageModelsID: 1,
     name: 'ChatGPT',
     description: 'Advanced conversational AI for text generation, translation, and more.',
     category: 'Language Models & Chatbots',
@@ -10,7 +11,7 @@ const aiTools = [
     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg'
   },
   {
-    id: 8,
+    languageModelsID: 2,
     name: 'Claude',
     description: 'Anthropic\'s advanced AI assistant focused on helpfulness and harmlessness.',
     category: 'Language Models & Chatbots',
@@ -18,7 +19,7 @@ const aiTools = [
     iconUrl: 'https://claude.ai/favicon.ico'
   },
   {
-    id: 16,
+    languageModelsID: 3,
     name: 'Gemini',
     description: 'Google\'s most capable AI model, multimodal reasoning with text, images, and code.',
     category: 'Language Models & Chatbots',
@@ -26,7 +27,7 @@ const aiTools = [
     iconUrl: 'https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg'
   },
   {
-    id: 7,
+    languageModelsID: 4,
     name: 'KimiAI',
     description: 'Intelligent conversational AI with strong contextual understanding.',
     category: 'Language Models & Chatbots',
@@ -34,7 +35,7 @@ const aiTools = [
     iconUrl: 'icons/kimiai.avif'
   },
   {
-    id: 10,
+    languageModelsID: 5,
     name: 'Qwen',
     description: 'Alibaba\'s conversational AI model with multilingual capabilities.',
     category: 'Language Models & Chatbots',
@@ -42,7 +43,7 @@ const aiTools = [
     iconUrl: 'icons/qwen.png'
   },
   {
-    id: 12,
+    languageModelsID: 6,
     name: 'Grok',
     description: 'xAI\'s conversational model with real-time data access and unique personality.',
     category: 'Language Models & Chatbots',
@@ -50,7 +51,7 @@ const aiTools = [
     iconUrl: 'icons/Grok.webp'
   },
   {
-    id: 13,
+    languageModelsID: 7,
     name: 'Le Chat - Mistral AI',
     description: 'French AI startup offering powerful open models with competitive performance.',
     category: 'Language Models & Chatbots',
@@ -58,17 +59,19 @@ const aiTools = [
     iconUrl: 'icons/mistral-ai.png'
   },
   {
-    id: 14,
+    languageModelsID: 8,
     name: 'Meta AI',
     description: 'Meta\'s AI assistant integrated across Meta apps and services.',
     category: 'Language Models & Chatbots',
     websiteUrl: 'https://www.meta.ai/',
     iconUrl: 'icons/metaai.jpg'
-  },
+  }
+];
 
-  // Image Generation & Art
+// Image Generation & Art
+const imageGeneration = [
   {
-    id: 3,
+    imageGenerationID: 1,
     name: 'Midjourney',
     description: 'Generative AI creating images from textual descriptions.',
     category: 'Image Generation & Art',
@@ -76,7 +79,7 @@ const aiTools = [
     iconUrl: 'icons/Midjourney.png'
   },
   {
-    id: 4,
+    imageGenerationID: 2,
     name: 'Stable Diffusion',
     description: 'Open-source text-to-image model for generating detailed visuals.',
     category: 'Image Generation & Art',
@@ -84,7 +87,7 @@ const aiTools = [
     iconUrl: 'https://stablediffusionweb.com/images/logo.png'
   },
   {
-    id: 19,
+    imageGenerationID: 3,
     name: 'Leonardo AI',
     description: 'Generate production-quality creative assets with AI.',
     category: 'Image Generation & Art',
@@ -92,7 +95,7 @@ const aiTools = [
     iconUrl: 'https://app.leonardo.ai/favicon.ico'
   },
   {
-    id: 20,
+    imageGenerationID: 4,
     name: 'Civit AI',
     description: 'Community hub for Stable Diffusion models, prompts and resources.',
     category: 'Image Generation & Art',
@@ -100,7 +103,7 @@ const aiTools = [
     iconUrl: 'https://civitai.com/favicon.ico'
   },
   {
-    id: 21,
+    imageGenerationID: 5,
     name: 'Ideogram',
     description: 'AI art generator specializing in text rendering and typography.',
     category: 'Image Generation & Art',
@@ -108,83 +111,139 @@ const aiTools = [
     iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEVHcEz///8AAABTU1P////////////////////////s7Oz29vZiYmIQEBAeHh7h4eHT09NCQkItLS3FxcV0dHQ6Ojq0tLSDg4OmpqaWlpZCl/6SAAAACnRSTlMA////ikVE3hjrhwjMiwAAARVJREFUKJF9UwuygyAQg2BfLX8UxN7/om+BYrW2ZkadJRp2Q2SMjcOdn3AfRka4Pc5UweNG3/3giB3ZsCsVX2IKeX6VA3vv5wADTBOgVduXvb+TIlhoKb2Abis7svAWjh4ay4EkTVJVM3T2fEXye1JGrXWkZUIoN3+SdQaLNxB+heikTOigzTJoFoGNjKIBWKmiazahk0rJBmeMLzMmU/stpE4pFCTNF1ibFbco0o2cXijklECKztpNVnZZSyPoHw0ZPKkZGuVZHfwyCs1CZrkvJtTFOVujdqQq9mWyrx1mPNi3Gb/wGEs/Z1lpSdaW9+LHedbDFtLDivCsWTjGhDJSzekxOQZM5qB9L4fraLK/i1Bf/Q7/6CUPuCjtwm8AAAAASUVORK5CYII='
   },
   {
-    id: 41,
+    imageGenerationID: 6,
     name: 'DALL-E',
     description: 'OpenAI\'s advanced AI system that creates realistic images and art from natural language descriptions.',
     category: 'Image Generation & Art',
     websiteUrl: 'https://labs.openai.com/',
     iconUrl: 'https://labs.openai.com/favicon.ico'
-  },
+  }
+];
 
-  // Development & Coding Tools
+// AI Agent IDEs
+const aiAgentIDEs = [
+  {
+    id: 1,
+    name: "Junie AI",
+    description: "JetBrains' AI-powered IDE assistant that helps developers write better code faster.",
+    category: "AI Agent IDE",
+    websiteUrl: "https://www.jetbrains.com/junie/",
+    iconUrl: "icons/junie.png"
+  },
+  {
+    id: 2,
+    name: "Cursor",
+    description: "The AI-first code editor that helps you code faster and smarter with built-in AI assistance.",
+    category: "AI Agent IDE",
+    websiteUrl: "https://www.cursor.com/",
+    iconUrl: "icons/cursor.png"
+  },
+  {
+    id: 3,
+    name: "Windsurf",
+    description: "Codeium's agentic IDE that combines AI capabilities with a seamless development experience.",
+    category: "AI Agent IDE",
+    websiteUrl: "https://codeium.com/windsurf",
+    iconUrl: "icons/windsurf.png"
+  }
+];
+
+// Development & Coding Tools
+const developmentTools = [
+  {
+    id: 1,
+    name: "GitHub Copilot",
+    description: "AI pair programmer that helps you write better code faster.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://github.com/features/copilot",
+    iconUrl: "icons/github-copilot.png"
+  },
+  {
+    id: 2,
+    name: "Tabnine",
+    description: "AI code completion tool that helps developers write code faster.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://www.tabnine.com/",
+    iconUrl: "icons/tabnine.png"
+  },
+  {
+    id: 3,
+    name: "Codeium",
+    description: "AI-powered code completion and chat assistant for developers.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://codeium.com/",
+    iconUrl: "icons/codeium.png"
+  },
+  {
+    id: 4,
+    name: "Amazon CodeWhisperer",
+    description: "AI-powered code suggestions and security scanning.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://aws.amazon.com/codewhisperer/",
+    iconUrl: "icons/codewhisperer.png"
+  },
   {
     id: 5,
-    name: 'GitHub Copilot',
-    description: 'AI pair programmer that assists developers in writing code.',
-    category: 'Development & Coding Tools',
-    websiteUrl: 'https://github.com/copilot',
-    iconUrl: 'icons/github-copilot.png'
+    name: "Replit Ghost",
+    description: "AI pair programmer for the Replit development environment.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://replit.com/ghost",
+    iconUrl: "icons/replit-ghost.png"
+  },
+  {
+    id: 6,
+    name: "CodeGeeX",
+    description: "Multilingual code generation and completion tool.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://codegeex.cn/",
+    iconUrl: "icons/codegeex.png"
+  },
+  {
+    id: 7,
+    name: "Codeium",
+    description: "AI-powered code completion and chat assistant.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://codeium.com/",
+    iconUrl: "icons/codeium.png"
+  },
+  {
+    id: 8,
+    name: "CodeWhisperer",
+    description: "Amazon's AI-powered code suggestions tool.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://aws.amazon.com/codewhisperer/",
+    iconUrl: "icons/codewhisperer.png"
   },
   {
     id: 9,
-    name: 'WebDev Arena',
-    description: 'AI-powered environment for web development and testing.',
-    category: 'Development & Coding Tools',
-    websiteUrl: 'https://web.lmarena.ai/',
-    iconUrl: 'https://web.lmarena.ai/favicon.ico'
+    name: "Codeium",
+    description: "AI-powered code completion and chat assistant.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://codeium.com/",
+    iconUrl: "icons/codeium.png"
   },
   {
-    id: 24,
-    name: 'Replit',
-    description: 'Browser-based IDE with AI coding assistance and collaborative development features.',
-    category: 'Development & Coding Tools',
-    websiteUrl: 'https://replit.com/',
-    iconUrl: 'https://play-lh.googleusercontent.com/baV9RL2D0iV8JkTtCzSxeLf6XxCJMWQYbyXMqyQfc0OQGtjkCyUenUbLb5tefYfMxfU=w240-h480-rw'
+    id: 10,
+    name: "CodeWhisperer",
+    description: "Amazon's AI-powered code suggestions tool.",
+    category: "Development & Coding Tools",
+    websiteUrl: "https://aws.amazon.com/codewhisperer/",
+    iconUrl: "icons/codewhisperer.png"
   },
   {
-    id: 28,
-    name: 'Junie',
-    description: 'JetBrains\' AI assistant that integrates with their IDEs for coding and development.',
-    category: 'AI Agent IDE',
-    websiteUrl: 'https://www.jetbrains.com/junie/',
-    iconUrl: 'https://blog.jetbrains.com/wp-content/uploads/2025/01/Group-10.svg'
-  },
-  {
-    id: 29,
-    name: 'Cursor AI',
-    description: 'AI-powered code editor built on VSCode with chat, edit, and generation capabilities.',
-    category: 'AI Agent IDE',
-    websiteUrl: 'https://www.cursor.com/',
-    iconUrl: 'icons/cursor.png'
-  },
-  {
-    id: 30,
-    name: 'Windsurf',
-    description: 'AI-powered coding assistant by Codeium with advanced code understanding and generation.',
-    category: 'AI Agent IDE',
-    websiteUrl: 'https://codeium.com/download',
-    iconUrl: 'https://codeium.com/favicon.ico'
-  },
-  {
-    id: 35,
-    name: 'Bind AI IDE',
-    description: 'AI code editor with built-in execution and support for 15+ models including Claude 3.5, GPT-4o, and Llama 3.',
-    category: 'AI Agent IDE',
-    websiteUrl: 'https://www.getbind.co/',
-    iconUrl: 'https://cdn.prod.website-files.com/650e15fb107e3d4aec2c591a/66f79211051c24799472b259_logo-dark.svg'
-  },
-  {
-    id: 40,
-    name: 'Devin',
-    description: 'Collaborative AI teammate for engineering teams, capable of handling complex development tasks and code migrations.',
-    category: 'AI Agent IDE',
-    websiteUrl: 'https://devin.ai/',
-    iconUrl: 'https://devin.ai/favicon.ico'
-  },
+    id: 11,
+    name: "Chat2DB",
+    description: "AI-powered database management and query tool.",
+    category: "AI Agent IDE",
+    websiteUrl: "https://chat2db.com/",
+    iconUrl: "icons/chat2db.png"
+  }
+];
 
-  // Local & Desktop AI
+// Local & Desktop AI
+const localAI = [
   {
-    id: 25,
+    localAIID: 1,
     name: 'Jan AI',
     description: 'Open-source desktop app for running local LLMs with a user-friendly interface.',
     category: 'Local & Desktop AI',
@@ -192,7 +251,7 @@ const aiTools = [
     iconUrl: 'https://jan.ai/favicon.ico'
   },
   {
-    id: 26,
+    localAIID: 2,
     name: 'Msty',
     description: 'Desktop application for running and fine-tuning language models locally.',
     category: 'Local & Desktop AI',
@@ -200,17 +259,27 @@ const aiTools = [
     iconUrl: 'https://msty.app/favicon.ico'
   },
   {
-    id: 27,
+    localAIID: 3,
     name: 'LM Studio',
     description: 'Desktop app for running local and private large language models with an intuitive UI.',
     category: 'Local & Desktop AI',
     websiteUrl: 'https://lmstudio.ai/',
     iconUrl: 'icons/lmstudio.webp'
   },
-
-  // Content Creation & Media
   {
-    id: 6,
+    localAIID: 4,
+    name: 'OpenWebUI',
+    description: 'User-friendly web interface for Ollama, supporting multiple models and providing a modern chat experience.',
+    category: 'Local & Desktop AI',
+    websiteUrl: 'https://github.com/open-webui/open-webui',
+    iconUrl: 'https://github.com/open-webui/open-webui/raw/main/static/logo.png'
+  }
+];
+
+// Content Creation & Media
+const contentCreation = [
+  {
+    contentCreationID: 1,
     name: 'RunwayML',
     description: 'Platform for artists and creators using AI for media synthesis.',
     category: 'Content Creation & Media',
@@ -218,7 +287,7 @@ const aiTools = [
     iconUrl: 'icons/Runway_Black_Symbol_SVG.svg'
   },
   {
-    id: 11,
+    contentCreationID: 2,
     name: 'V0',
     description: 'AI tool for generating UI designs and website components from text descriptions.',
     category: 'Content Creation & Media',
@@ -226,7 +295,7 @@ const aiTools = [
     iconUrl: 'icons/v0.png'
   },
   {
-    id: 18,
+    contentCreationID: 3,
     name: 'Bolt AI',
     description: 'Quick AI-powered digital content creation tool.',
     category: 'Content Creation & Media',
@@ -234,7 +303,7 @@ const aiTools = [
     iconUrl: 'icons/bolt.svg'
   },
   {
-    id: 38,
+    contentCreationID: 4,
     name: 'Gamma',
     description: 'AI-powered presentation and document creation platform for creating beautiful, interactive content.',
     category: 'Content Creation & Media',
@@ -242,17 +311,19 @@ const aiTools = [
     iconUrl: 'icons/gamma.svg'
   },
   {
-    id: 43,
+    contentCreationID: 5,
     name: 'FreePik',
     description: 'AI-powered platform for creating and accessing high-quality design resources, including vectors, photos, and PSD files.',
     category: 'Content Creation & Media',
     websiteUrl: 'https://www.freepik.com/',
     iconUrl: 'https://www.freepik.com/favicon.ico'
-  },
+  }
+];
 
-  // AI Platforms & Infrastructure
+// AI Platforms & Infrastructure
+const aiPlatforms = [
   {
-    id: 2,
+    aiPlatformsID: 1,
     name: 'DeepSeek',
     description: 'AI platform focused on deep learning research and applications.',
     category: 'AI Platforms & Infrastructure',
@@ -260,7 +331,7 @@ const aiTools = [
     iconUrl: 'icons/deepseek.svg'
   },
   {
-    id: 49,
+    aiPlatformsID: 2,
     name: 'DeepSite',
     description: 'AI platform focused on deep learning research and applications.',
     category: 'AI Platforms & Infrastructure',
@@ -268,7 +339,7 @@ const aiTools = [
     iconUrl: 'icons/DeepSite.svg'
   },
   {
-    id: 17,
+    aiPlatformsID: 3,
     name: 'Weights',
     description: 'Platform for discovering, training and deploying open source AI models.',
     category: 'AI Platforms & Infrastructure',
@@ -276,7 +347,7 @@ const aiTools = [
     iconUrl: 'https://www.weights.com/favicon.ico'
   },
   {
-    id: 22,
+    aiPlatformsID: 4,
     name: 'HuggingFace',
     description: 'Platform for discovering, sharing and collaborating on machine learning models.',
     category: 'AI Platforms & Infrastructure',
@@ -284,15 +355,15 @@ const aiTools = [
     iconUrl: 'https://huggingface.co/favicon.ico'
   },
   {
-    id: 31,
+    aiPlatformsID: 5,
     name: 'Fragments by E2B',
     description: 'Open-source Next.js template for building apps fully generated by AI with secure code execution.',
     category: 'AI Platforms & Infrastructure',
     websiteUrl: 'https://github.com/e2b-dev/fragments',
-    iconUrl: 'https://raw.githubusercontent.com/e2b-dev/fragments/main/preview.png'
+    iconUrl: 'icons/Fragments.png'
   },
   {
-    id: 34,
+    aiPlatformsID: 6,
     name: 'Bolt.DIY',
     description: 'Open-source tool for building full-stack web applications using any LLM, with in-browser code execution.',
     category: 'AI Platforms & Infrastructure',
@@ -300,17 +371,19 @@ const aiTools = [
     iconUrl: 'icons/Bolt.DIY.png'
   },
   {
-    id: 42,
+    aiPlatformsID: 7,
     name: 'Janus',
     description: 'Unified multimodal understanding and generation model for handling various types of data and tasks.',
     category: 'AI Platforms & Infrastructure',
     websiteUrl: 'https://github.com/deepseek-ai/Janus',
     iconUrl: 'https://github.com/deepseek-ai/Janus/raw/main/assets/logo.png'
-  },
+  }
+];
 
-  // Business & Productivity
+// Business & Productivity
+const businessTools = [
   {
-    id: 32,
+    businessToolsID: 1,
     name: 'Chat2DB',
     description: 'AI-powered SQL generator and database client that connects to multiple data sources.',
     category: 'AI Agent IDE',
@@ -318,7 +391,7 @@ const aiTools = [
     iconUrl: 'icons/Chat2DB.png'
   },
   {
-    id: 36,
+    businessToolsID: 2,
     name: 'ChatGPT Operator',
     description: 'A platform for building autonomous AI agents that can perform complex tasks across multiple applications.',
     category: 'AI Agent',
@@ -326,7 +399,7 @@ const aiTools = [
     iconUrl: 'https://operator.chatgpt.com/favicon.ico'
   },
   {
-    id: 37,
+    businessToolsID: 3,
     name: 'Genspark',
     description: 'AI-powered platform for creating personalized user experiences and intelligent customer interactions.',
     category: 'Content Creation & Media',
@@ -334,73 +407,80 @@ const aiTools = [
     iconUrl: 'https://www.genspark.ai/favicon.ico'
   },
   {
-    id: 39,
+    businessToolsID: 4,
     name: 'Tome',
     description: 'AI assistant for sales that helps identify strategic initiatives and key decision makers for account engagement.',
     category: 'Content Creation & Media',
     websiteUrl: 'https://tome.app/',
     iconUrl: 'https://tome.app/favicon.ico'
-  },
+  }
+];
 
-  // Privacy & Security
+// Privacy & Security
+const privacyTools = [
   {
-    id: 23,
+    privacyToolsID: 1,
     name: 'OnionGPT',
     description: 'Anonymous AI assistant accessible through the Tor network.',
     category: 'Privacy & Security',
     websiteUrl: 'http://oniongpt6lntsoztgylhju7nmqedlq6fjexe55z327lmxyae3nutlyad.onion/',
     iconUrl: 'https://www.torproject.org/static/images/favicon/favicon.ico'
-  },
+  }
+];
 
-  // VR/AR & Emerging Tech
+// VR/AR & Emerging Tech
+const emergingTech = [
   {
-    id: 33,
+    emergingTechID: 1,
     name: 'Manus',
     description: 'AI-powered hand tracking and haptic technology for immersive VR/AR experiences.',
     category: 'AI Agent',
     websiteUrl: 'https://manus.im/',
-    iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFTElEQVR4AbVXA3czWBBd/5b11ratz7Zt27Zt1rYRp7b5NbaTfbfbnJO6Tbo95zbJ09yZNzNv5jv8GQwG4AcCK4LTBGkEVAL6LIGCM4fPtoYsyDQV/gvBIoIMAgaAjbMMnMmEDMgaljlE4HuCxQTlWDDZIXq9nq7T6UaP04AZEGFCFmRCNghYg9VUwjUaDePhg3vdly6c65dIJEwjoZqaqtrmpsbqGVrDaAkrEDg9kclNNZNIxMxFC+ZInB1tdBRKeT3mamtrakND/JWrVy0TgZQZV3IaBNLGI9DV1VkVF/ulrb29rcpI5OiRg4PW//xuePrkYRfGrl652Gf192+Ggwf2cGAhMwikgQBlPM3v373dY2P1hyEqIkQeH/e1DeMfP7xrNwqERZYuni9xcrDW5+XlNBlJzhDU7yaahHm3bl4vcLD7R+/m4qBNSIhr7exor9qxbTP/06f37RwOhx0dGSoPDwtU9Pb2VpobHRMSgEYymYz56OG9bj8fD/WD+3e6MaZSqRiIBKCwIK+xuLiwUaFQMPr7+yo5nEG2VqudLQLwfDWjva2tOj09taW1taVap9OaOiZAYzLodTu2b+aHEWeMjgyR371zs0culzEtJgCBB/bv4QQH+qhgAZh7356d3ERyFZzBQTaEV1dV1kaGByvgmL7ebmo3F3st8QldQnxcK+bNJiCTSZnbtm7k42A/H/ch4d6erho4pb3t3/r5c6NkuJL1a1cJsWb71k385uamamNUnDl9YsASC9BqqqtqPd2dNEEBPioajVrP5/NYdXW1Na9fvehcvXKpGLkAgoHIiGAFhGMfBIPAnds3eiyxAK2xob7Gh5jU19tdnZ+X2wSHGz6QKhaLmRnpqc3QOiw0QJmclNCKOeKITCQkRE1OdlaTRVegVqsZp08e+2Zr/afBy8NFs3/vLi7JBa0f3r9tP3xoHwehuGf3dt75c6cH2tpaq7FHpVIy1q9bJcQeWMpiJ+Tz+azr1y71Bfp7qXAoNMP921j9Dj8wwB8wHhMdJi/Izx3S+Mvnj21ITBHhQQoQszgMEdO4X4QZ7js02F/54sXTzqzM9Oa3b151wAlBIjoqTI4kpST5YMum9QKQe/f2dQdIAWYTAJRKJWPj+jVCO5u/DG9evzQ9lCYgVtq0Ya0QVnn29HEXfOTenVs9cMTjxw4NlpWWNLwkhIUCAstsAsTpWOQVlMK0GRlpzaNeSuqnj+/bofE+4icYe/XyeSd+uzrbab08nDW4OuQOzJlFALhw/kw/Dl1CHh8ej8sWEI2yszKbW1uaq9+/e9OBa9i9cxsPa5GSr1y+0BcRFqTA+LBTdlhCgIb3n2ikmxsTIUMYfibOBs38fT3USFQg9/DB3W4TIbRbN6/1Gp03wVILdHd3VYWFBChA4uWLZ50VFWUNu3Zu5SH/B5Ao2UtSNDQ3rhcI+KxlSxZI4Lh4SSsqyhssIgDAyVycbHVDqXhetOzY0YODyHipKUktXC6HbVofom6Az8AyiBwogHmLCOAZRjJavmyR2NXFXgftEBk+Xq4ajJ08cfTbi+dPO2/euNob6O+tgvmxZuOGNUIkKYsJGDUUiUQsKqWiHhbZt3cnFxXT8NswnJyAP4fI4fPBvf/qiMkImNOA0AC8EQMDA5WlJcUNz58+6ZxHXklT4bAOm82qm4QAZcKi1AxC1LjYr62O9lZ6EIBFYCG8K1MVpadnqxMSCYUs1BHQHjVEFSlYQG6qstzKtDGxFChQUc7Xk/ptGo2J9bRaM3N9ZLqt2ejmlPn/NafAqOZ0VHtubdKeU2ZRONWkPbcybc//BZnHVLQkHQqfAAAAAElFTkSuQmCC'
-  },
-  {
-    id: 44,
-    name: 'OpenWebUI',
-    description: 'User-friendly web interface for Ollama, supporting multiple models and providing a modern chat experience.',
-    category: 'Local & Desktop AI',
-    websiteUrl: 'https://github.com/open-webui/open-webui',
-    iconUrl: 'https://github.com/open-webui/open-webui/raw/main/static/logo.png'
-  },
-  {
-    id: 45,
-    name: 'Ollama',
-    description: 'Open-source platform for running large language models locally, with support for multiple models and easy deployment.',
-    category: 'Language Models & Chatbots',
-    websiteUrl: 'https://github.com/ollama/ollama',
-    iconUrl: 'https://ollama.ai/favicon.ico'
-  },
-  {
-    id: 46,
-    name: 'PrivateGPT',
-    description: 'Secure and private local AI system for document analysis and question answering, with no internet connection required.',
-    category: 'Local & Desktop AI',
-    websiteUrl: 'https://github.com/imartinez/privateGPT',
-    iconUrl: 'https://github.com/imartinez/privateGPT/raw/main/docs/private-gpt.png'
-  },
-  {
-    id: 47,
-    name: 'Auto-GPT',
-    description: 'Experimental open-source autonomous AI agent that can perform complex tasks by breaking them down into subtasks.',
-    category: 'AI Agent',
-    websiteUrl: 'https://github.com/Torantulino/Auto-GPT',
-    iconUrl: 'https://github.com/Torantulino/Auto-GPT/raw/main/docs/logo.png'
-  },
-  {
-    id: 48,
-    name: 'DeepMotion',
-    description: 'AI-powered motion capture and animation platform for creating realistic human movements in digital content.',
-    category: 'Video & Animation',
-    websiteUrl: 'https://www.deepmotion.com/',
-    iconUrl: 'https://www.deepmotion.com/favicon.ico'
+    iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFTElEQVR4AbVXA3czWBBd/5b11ratz7Zt27Zt1rYRp7b5NbaTfbfbnJO6Tbo95zbJ09yZNzNv5jv8GQwG4AcCK4LTBGkEVAL6LIGCM4fPtoYsyDQV/gvBIoIMAgaAjbMMnMmEDMgaljlE4HuCxQTlWDDZIXq9nq7T6UaP04AZEGFCFmRCNghYg9VUwjUaDePhg3vdly6c65dIJEwjoZqaqtrmpsbqGVrDaAkrEDg9kclNNZNIxMxFC+ZInB1tdBRKeT3mamtrakND/JWrVy0TgZQZV3IaBNLGI9DV1VkVF/ulrb29rcpI5OiRg4PW//xuePrkYRfGrl652Gf192+Ggwf2cGAhMwikgQBlPM3v373dY2P1hyEqIkQeH/e1DeMfP7xrNwqERZYuni9xcrDW5+XlNBlJzhDU7yaahHm3bl4vcLD7R+/m4qBNSIhr7exor9qxbTP/06f37RwOhx0dGSoPDwtU9Pb2VpobHRMSgEYymYz56OG9bj8fD/WD+3e6MaZSqRiIBKCwIK+xuLiwUaFQMPr7+yo5nEG2VqudLQLwfDWjva2tOj09taW1taVap9OaOiZAYzLodTu2b+aHEWeMjgyR371zs0culzEtJgCBB/bv4QQH+qhgAZh7356d3ERyFZzBQTaEV1dV1kaGByvgmL7ebmo3F3st8QldQnxcK+bNJiCTSZnbtm7k42A/H/ch4d6erho4pb3t3/r5c6NkuJL1a1cJsWb71k385uamamNUnDl9YsASC9BqqqpqPd2dNEEBPioajVrP5/NYdXW1Na9fvehcvXKpGLkAgoHIiGAFhGMfBIPAnds3eiyxAK2xob7Gh5jU19tdnZ+X2wSHGz6QKhaLmRnpqc3QOiw0QJmclNCKOeKITCQkRE1OdlaTRVegVqsZp08e+2Zr/afBy8NFs3/vLi7JBa0f3r9tP3xoHwehuGf3dt75c6cH2tpaq7FHpVIy1q9bJcQeWMpiJ+Tz+azr1y71Bfp7qXAoNMP921j9Dj8wwB8wHhMdJi/Izx3S+Mvnj21ITBHhQQoQszgMEdO4X4QZ7js02F/54sXTzqzM9Oa3b151wAlBIjoqTI4kpST5YMum9QKQe/f2dQdIAWYTAJRKJWPj+jVCO5u/DG9evzQ9lCYgVtq0Ya0QVnn29HEXfOTenVs9cMTjxw4NlpWWNLwkhIUCAstsAsTpWOQVlMK0GRlpzaNeSuqnj+/bofE+4icYe/XyeSd+uzrbab08nDW4OuQOzJlFALhw/kw/Dl1CHh8ej8sWEI2yszKbW1uaq9+/e9OBa9i9cxsPa5GSr1y+0BcRFqTA+LBTdlhCgIb3n2ikmxsTIUMYfibOBs38fT3USFQg9/DB3W4TIbRbN6/1Gp03wVILdHd3VYWHBChA4uWLZ50VFWUNu3Zu5SH/B5Ao2UtSNDQ3rhcI+KxlSxZI4Lh4SSsqyhssIgDAyVycbHVDqXhetOzY0YODyHipKUktXC6HbXofom6Az8AyiBwogHmLCOAZRjJavmyR2NXFXgftEBk+Xq4ajJ08cfTbi+dPO2/euNob6O+tgvmxZuOGNUIkKYsJGDUUiUQsKqWiHhbZt3cnFxXT8NswnJyAP4fI4fPBvf/qiMkImNOA0AC8EQMDA5WlJcUNz58+6ZxHXklT4bAOm82qm4QAZcKi1AxC1LjYr62O9lZ6EIBFYCG8K1MVpadnqxMSCYUs1BHQHjVEFSlYQG6qstzKtDGxFChQUc7Xk/ptGo2J9bRaM3N9ZLqt2ejmlPn/NafAqOZ0VHtubdKeU2ZRONWkPbcybc//BZnHVLQkHQqfAAAAAElFTkSuQmCC'
   }
+];
+
+// AI Terminals
+const aiTerminals = [
+  {
+    id: 1,
+    name: "Warp",
+    description: "The intelligent terminal that combines AI and your dev team's knowledge in one fast, intuitive interface.",
+    category: "AI Terminals",
+    websiteUrl: "https://www.warp.dev/",
+    iconUrl: "icons/warp.png"
+  },
+  {
+    id: 2,
+    name: "Wave",
+    description: "An open-source terminal with superpowers, integrating file previews, file editing, AI, web browsing, and workspace organization.",
+    category: "AI Terminals",
+    websiteUrl: "https://www.waveterm.dev/",
+    iconUrl: "icons/wave.png"
+  },
+  {
+    id: 3,
+    name: "Fig",
+    description: "AI-powered terminal with intelligent command suggestions and autocomplete.",
+    category: "AI Terminals",
+    websiteUrl: "https://fig.io/",
+    iconUrl: "icons/fig.png"
+  }
+];
+
+// Combine all tools into a single array
+const aiTools = [
+  ...languageModels,
+  ...imageGeneration,
+  ...developmentTools,
+  ...localAI,
+  ...contentCreation,
+  ...aiPlatforms,
+  ...businessTools,
+  ...privacyTools,
+  ...emergingTech,
+  ...aiAgentIDEs,
+  ...aiTerminals
 ];
 
 // Initialize the page
@@ -494,13 +574,21 @@ function setupSearch() {
   
   // Search on button click
   searchButton.addEventListener('click', () => {
+    searchButton.classList.add('searching');
     performSearch();
+    setTimeout(() => {
+      searchButton.classList.remove('searching');
+    }, 600);
   });
   
   // Search on Enter key press
   searchInput.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
+      searchButton.classList.add('searching');
       performSearch();
+      setTimeout(() => {
+        searchButton.classList.remove('searching');
+      }, 600);
     }
   });
   
@@ -510,14 +598,6 @@ function setupSearch() {
     setTimeout(() => {
       searchInput.classList.remove('scanning');
     }, 800);
-  });
-  
-  // Add click animation to search button
-  searchButton.addEventListener('mousedown', () => {
-    searchButton.classList.add('searching');
-    setTimeout(() => {
-      searchButton.classList.remove('searching');
-    }, 600);
   });
 }
 
@@ -544,7 +624,10 @@ function performSearch() {
     );
   }
   
-  renderAITools(filteredTools, true);
+  // Add a small delay before rendering to allow for the button animation
+  setTimeout(() => {
+    renderAITools(filteredTools, true);
+  }, 300);
 }
 
 // Function to render AI tools
@@ -596,19 +679,161 @@ function renderAITools(toolsToRender = aiTools, withAnimation = false) {
 
 // Function to add a new AI tool (could be used with a form in the future)
 function addAITool(name, description, category, websiteUrl, iconUrl) {
-  const newId = aiTools.length > 0 ? Math.max(...aiTools.map(tool => tool.id)) + 1 : 1;
+  let newTool;
   
-  const newTool = {
-    id: newId,
-    name,
-    description,
-    category,
-    websiteUrl,
-    iconUrl
-  };
+  // Add to appropriate category array with category-specific ID
+  switch(category) {
+    case 'Language Models & Chatbots':
+      newTool = {
+        languageModelsID: languageModels.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      languageModels.push(newTool);
+      break;
+    case 'Image Generation & Art':
+      newTool = {
+        imageGenerationID: imageGeneration.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      imageGeneration.push(newTool);
+      break;
+    case 'Development & Coding Tools':
+      newTool = {
+        developmentToolsID: developmentTools.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      developmentTools.push(newTool);
+      break;
+    case 'Local & Desktop AI':
+      newTool = {
+        localAIID: localAI.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      localAI.push(newTool);
+      break;
+    case 'Content Creation & Media':
+      newTool = {
+        contentCreationID: contentCreation.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      contentCreation.push(newTool);
+      break;
+    case 'AI Platforms & Infrastructure':
+      newTool = {
+        aiPlatformsID: aiPlatforms.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      aiPlatforms.push(newTool);
+      break;
+    case 'Business & Productivity':
+      newTool = {
+        businessToolsID: businessTools.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      businessTools.push(newTool);
+      break;
+    case 'Privacy & Security':
+      newTool = {
+        privacyToolsID: privacyTools.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      privacyTools.push(newTool);
+      break;
+    case 'VR/AR & Emerging Tech':
+      newTool = {
+        emergingTechID: emergingTech.length + 1,
+        name,
+        description,
+        category,
+        websiteUrl,
+        iconUrl
+      };
+      emergingTech.push(newTool);
+      break;
+    default:
+      console.warn('Unknown category:', category);
+      return null;
+  }
   
+  // Add to main array
   aiTools.push(newTool);
   renderAITools();
   
   return newTool;
-} 
+}
+
+// Matrix rain effect
+function createMatrixRain() {
+    const canvas = document.createElement('canvas');
+    canvas.classList.add('matrix-rain');
+    document.body.appendChild(canvas);
+    
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+    const matrixArray = matrix.split("");
+    const fontSize = 10;
+    const columns = canvas.width / fontSize;
+    const drops = [];
+    
+    for (let i = 0; i < columns; i++) {
+        drops[i] = 1;
+    }
+    
+    function draw() {
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#0F0';
+        ctx.font = fontSize + 'px monospace';
+        
+        for (let i = 0; i < drops.length; i++) {
+            const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+            
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        }
+    }
+    
+    setInterval(draw, 33);
+}
+
+// Initialize Matrix rain effect
+createMatrixRain(); 

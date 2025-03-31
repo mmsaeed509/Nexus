@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Matrix Rain Effect -->
+  <g opacity="0.2">
+    <text x="50" y="40" font-family="monospace" font-size="12" fill="#00ff00">1</text>
+    <text x="60" y="60" font-family="monospace" font-size="12" fill="#00ff00">0</text>
+    <text x="70" y="80" font-family="monospace" font-size="12" fill="#00ff00">1</text>
+    <text x="80" y="100" font-family="monospace" font-size="12" fill="#00ff00">0</text>
+    <text x="90" y="120" font-family="monospace" font-size="12" fill="#00ff00">1</text>
+    <text x="100" y="140" font-family="monospace" font-size="12" fill="#00ff00">0</text>
+    <text x="110" y="160" font-family="monospace" font-size="12" fill="#00ff00">1</text>
+  </g>
+  
+  <!-- Hexagon Grid -->
+  <g stroke="#00ff00" stroke-width="1" opacity="0.2">
+    <path d="M100 30 L130 45 L130 75 L100 90 L70 75 L70 45 Z"/>
+    <path d="M100 90 L130 105 L130 135 L100 150 L70 135 L70 105 Z"/>
+  </g>
+  
+  <!-- Main Logo Text -->
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="#00ff00" text-anchor="middle" dominant-baseline="middle">
+    AI
+    <tspan x="100" y="160" font-size="36">MATRIX</tspan>
+  </text>
+  
+  <!-- Glow Effect -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.1">
+    <animate attributeName="r" values="85;90;85" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Circuit Lines -->
+  <g stroke="#00ff00" stroke-width="1" opacity="0.3">
+    <path d="M40 100 L70 100"/>
+    <path d="M130 100 L160 100"/>
+    <path d="M100 40 L100 70"/>
+    <path d="M100 130 L100 160"/>
+  </g>
+  
+  <!-- Corner Accents -->
+  <g stroke="#00ff00" stroke-width="2" opacity="0.5">
+    <path d="M30 30 L50 30 L50 50"/>
+    <path d="M170 30 L150 30 L150 50"/>
+    <path d="M30 170 L50 170 L50 150"/>
+    <path d="M170 170 L150 170 L150 150"/>
+  </g>
+</svg> 
