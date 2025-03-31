@@ -200,43 +200,35 @@ const developmentTools = [
   },
   {
     id: 7,
-    name: "Codeium",
-    description: "AI-powered code completion and chat assistant.",
+    name: "Chat2DB",
+    description: "AI-powered database management and query tool.",
     category: "Development & Coding Tools",
-    websiteUrl: "https://codeium.com/",
-    iconUrl: "icons/codeium.png"
+    websiteUrl: "https://chat2db.com/",
+    iconUrl: "icons/chat2db.png"
   },
   {
     id: 8,
-    name: "CodeWhisperer",
-    description: "Amazon's AI-powered code suggestions tool.",
+    name: "Marblism",
+    description: "Generate a SaaS boilerplate from a prompt.",
     category: "Development & Coding Tools",
-    websiteUrl: "https://aws.amazon.com/codewhisperer/",
-    iconUrl: "icons/codewhisperer.png"
+    websiteUrl: "https://marblism.com",
+    iconUrl: "icons/marblism.png"
   },
   {
     id: 9,
-    name: "Codeium",
-    description: "AI-powered code completion and chat assistant.",
+    name: "Code to Flow",
+    description: "Visualize and understand code flow with AI-powered flowcharts.",
     category: "Development & Coding Tools",
-    websiteUrl: "https://codeium.com/",
-    iconUrl: "icons/codeium.png"
+    websiteUrl: "https://codetoflow.com",
+    iconUrl: "icons/codetoflow.png"
   },
   {
     id: 10,
-    name: "CodeWhisperer",
-    description: "Amazon's AI-powered code suggestions tool.",
+    name: "SinglebaseCloud",
+    description: "AI-powered backend platform with Vector DB, DocumentDB, and Auth.",
     category: "Development & Coding Tools",
-    websiteUrl: "https://aws.amazon.com/codewhisperer/",
-    iconUrl: "icons/codewhisperer.png"
-  },
-  {
-    id: 11,
-    name: "Chat2DB",
-    description: "AI-powered database management and query tool.",
-    category: "AI Agent IDE",
-    websiteUrl: "https://chat2db.com/",
-    iconUrl: "icons/chat2db.png"
+    websiteUrl: "https://singlebase.cloud",
+    iconUrl: "icons/singlebasecloud.png"
   }
 ];
 
@@ -279,44 +271,44 @@ const localAI = [
 // Content Creation & Media
 const contentCreation = [
   {
-    contentCreationID: 1,
-    name: 'RunwayML',
-    description: 'Platform for artists and creators using AI for media synthesis.',
-    category: 'Content Creation & Media',
-    websiteUrl: 'https://app.runwayml.com/',
-    iconUrl: 'icons/Runway_Black_Symbol_SVG.svg'
+    id: 1,
+    name: "Synthesia",
+    description: "AI video creation platform for generating professional videos.",
+    category: "Content Creation & Media",
+    websiteUrl: "https://www.synthesia.io/",
+    iconUrl: "icons/synthesia.png"
   },
   {
-    contentCreationID: 2,
-    name: 'V0',
-    description: 'AI tool for generating UI designs and website components from text descriptions.',
-    category: 'Content Creation & Media',
-    websiteUrl: 'https://v0.dev/',
-    iconUrl: 'icons/v0.png'
+    id: 2,
+    name: "Rytr",
+    description: "AI writing assistant for content creation and automation.",
+    category: "Content Creation & Media",
+    websiteUrl: "https://rytr.me/",
+    iconUrl: "icons/rytr.png"
   },
   {
-    contentCreationID: 3,
-    name: 'Bolt AI',
-    description: 'Quick AI-powered digital content creation tool.',
-    category: 'Content Creation & Media',
-    websiteUrl: 'https://bolt.new/',
-    iconUrl: 'icons/bolt.svg'
+    id: 3,
+    name: "Let's Enhance",
+    description: "AI-powered image enhancement and upscaling tool.",
+    category: "Content Creation & Media",
+    websiteUrl: "https://letsenhance.io/",
+    iconUrl: "icons/letsenhance.png"
   },
   {
-    contentCreationID: 4,
-    name: 'Gamma',
-    description: 'AI-powered presentation and document creation platform for creating beautiful, interactive content.',
-    category: 'Content Creation & Media',
-    websiteUrl: 'https://gamma.app/',
-    iconUrl: 'icons/gamma.svg'
+    id: 4,
+    name: "FairyTailAI",
+    description: "AI-powered personalized bedtime story generator.",
+    category: "Content Creation & Media",
+    websiteUrl: "https://fairytailai.com/",
+    iconUrl: "icons/fairytailai.png"
   },
   {
-    contentCreationID: 5,
-    name: 'FreePik',
-    description: 'AI-powered platform for creating and accessing high-quality design resources, including vectors, photos, and PSD files.',
-    category: 'Content Creation & Media',
-    websiteUrl: 'https://www.freepik.com/',
-    iconUrl: 'https://www.freepik.com/favicon.ico'
+    id: 5,
+    name: "Content Studio AI",
+    description: "AI-powered faceless video creation platform.",
+    category: "Content Creation & Media",
+    websiteUrl: "https://contentstudioai.com",
+    iconUrl: "icons/contentstudioai.png"
   }
 ];
 
@@ -381,38 +373,46 @@ const aiPlatforms = [
 ];
 
 // Business & Productivity
-const businessTools = [
+const businessProductivity = [
   {
-    businessToolsID: 1,
-    name: 'Chat2DB',
-    description: 'AI-powered SQL generator and database client that connects to multiple data sources.',
-    category: 'AI Agent IDE',
-    websiteUrl: 'https://chat2db.ai/',
-    iconUrl: 'icons/Chat2DB.png'
+    id: 1,
+    name: "DraftLab",
+    description: "AI-powered Gmail assistant for email management.",
+    category: "Business & Productivity",
+    websiteUrl: "https://draftlab.ai/",
+    iconUrl: "icons/draftlab.png"
   },
   {
-    businessToolsID: 2,
-    name: 'ChatGPT Operator',
-    description: 'A platform for building autonomous AI agents that can perform complex tasks across multiple applications.',
-    category: 'AI Agent',
-    websiteUrl: 'https://operator.chatgpt.com/',
-    iconUrl: 'https://operator.chatgpt.com/favicon.ico'
+    id: 2,
+    name: "Plus AI for Google Slides",
+    description: "Create AI-powered presentations in Google Slides.",
+    category: "Business & Productivity",
+    websiteUrl: "https://www.plusdocs.com/plus-ai-for-google-slides",
+    iconUrl: "icons/plusai.png"
   },
   {
-    businessToolsID: 3,
-    name: 'Genspark',
-    description: 'AI-powered platform for creating personalized user experiences and intelligent customer interactions.',
-    category: 'Content Creation & Media',
-    websiteUrl: 'https://www.genspark.ai/',
-    iconUrl: 'https://www.genspark.ai/favicon.ico'
+    id: 3,
+    name: "Documind AI",
+    description: "Chat with PDFs using GPT-4 technology.",
+    category: "Business & Productivity",
+    websiteUrl: "https://documind.chat",
+    iconUrl: "icons/documind.png"
   },
   {
-    businessToolsID: 4,
-    name: 'Tome',
-    description: 'AI assistant for sales that helps identify strategic initiatives and key decision makers for account engagement.',
-    category: 'Content Creation & Media',
-    websiteUrl: 'https://tome.app/',
-    iconUrl: 'https://tome.app/favicon.ico'
+    id: 4,
+    name: "guidde",
+    description: "AI-powered video documentation creation tool.",
+    category: "Business & Productivity",
+    websiteUrl: "https://www.guidde.com",
+    iconUrl: "icons/guidde.png"
+  },
+  {
+    id: 5,
+    name: "Kolega",
+    description: "AI-powered employees for Slack and Teams.",
+    category: "Business & Productivity",
+    websiteUrl: "https://kolega.ai",
+    iconUrl: "icons/kolega.png"
   }
 ];
 
@@ -436,7 +436,7 @@ const emergingTech = [
     description: 'AI-powered hand tracking and haptic technology for immersive VR/AR experiences.',
     category: 'AI Agent',
     websiteUrl: 'https://manus.im/',
-    iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFTElEQVR4AbVXA3czWBBd/5b11ratz7Zt27Zt1rYRp7b5NbaTfbfbnJO6Tbo95zbJ09yZNzNv5jv8GQwG4AcCK4LTBGkEVAL6LIGCM4fPtoYsyDQV/gvBIoIMAgaAjbMMnMmEDMgaljlE4HuCxQTlWDDZIXq9nq7T6UaP04AZEGFCFmRCNghYg9VUwjUaDePhg3vdly6c65dIJEwjoZqaqtrmpsbqGVrDaAkrEDg9kclNNZNIxMxFC+ZInB1tdBRKeT3mamtrakND/JWrVy0TgZQZV3IaBNLGI9DV1VkVF/ulrb29rcpI5OiRg4PW//xuePrkYRfGrl652Gf192+Ggwf2cGAhMwikgQBlPM3v373dY2P1hyEqIkQeH/e1DeMfP7xrNwqERZYuni9xcrDW5+XlNBlJzhDU7yaahHm3bl4vcLD7R+/m4qBNSIhr7exor9qxbTP/06f37RwOhx0dGSoPDwtU9Pb2VpobHRMSgEYymYz56OG9bj8fD/WD+3e6MaZSqRiIBKCwIK+xuLiwUaFQMPr7+yo5nEG2VqudLQLwfDWjva2tOj09taW1taVap9OaOiZAYzLodTu2b+aHEWeMjgyR371zs0culzEtJgCBB/bv4QQH+qhgAZh7356d3ERyFZzBQTaEV1dV1kaGByvgmL7ebmo3F3st8QldQnxcK+bNJiCTSZnbtm7k42A/H/ch4d6erho4pb3t3/r5c6NkuJL1a1cJsWb71k385uamamNUnDl9YsASC9BqqqpqPd2dNEEBPioajVrP5/NYdXW1Na9fvehcvXKpGLkAgoHIiGAFhGMfBIPAnds3eiyxAK2xob7Gh5jU19tdnZ+X2wSHGz6QKhaLmRnpqc3QOiw0QJmclNCKOeKITCQkRE1OdlaTRVegVqsZp08e+2Zr/afBy8NFs3/vLi7JBa0f3r9tP3xoHwehuGf3dt75c6cH2tpaq7FHpVIy1q9bJcQeWMpiJ+Tz+azr1y71Bfp7qXAoNMP921j9Dj8wwB8wHhMdJi/Izx3S+Mvnj21ITBHhQQoQszgMEdO4X4QZ7js02F/54sXTzqzM9Oa3b151wAlBIjoqTI4kpST5YMum9QKQe/f2dQdIAWYTAJRKJWPj+jVCO5u/DG9evzQ9lCYgVtq0Ya0QVnn29HEXfOTenVs9cMTjxw4NlpWWNLwkhIUCAstsAsTpWOQVlMK0GRlpzaNeSuqnj+/bofE+4icYe/XyeSd+uzrbab08nDW4OuQOzJlFALhw/kw/Dl1CHh8ej8sWEI2yszKbW1uaq9+/e9OBa9i9cxsPa5GSr1y+0BcRFqTA+LBTdlhCgIb3n2ikmxsTIUMYfibOBs38fT3USFQg9/DB3W4TIbRbN6/1Gp03wVILdHd3VYWHBChA4uWLZ50VFWUNu3Zu5SH/B5Ao2UtSNDQ3rhcI+KxlSxZI4Lh4SSsqyhssIgDAyVycbHVDqXhetOzY0YODyHipKUktXC6HbXofom6Az8AyiBwogHmLCOAZRjJavmyR2NXFXgftEBk+Xq4ajJ08cfTbi+dPO2/euNob6O+tgvmxZuOGNUIkKYsJGDUUiUQsKqWiHhbZt3cnFxXT8NswnJyAP4fI4fPBvf/qiMkImNOA0AC8EQMDA5WlJcUNz58+6ZxHXklT4bAOm82qm4QAZcKi1AxC1LjYr62O9lZ6EIBFYCG8K1MVpadnqxMSCYUs1BHQHjVEFSlYQG6qstzKtDGxFChQUc7Xk/ptGo2J9bRaM3N9ZLqt2ejmlPn/NafAqOZ0VHtubdKeU2ZRONWkPbcybc//BZnHVLQkHQqfAAAAAElFTkSuQmCC'
+    iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFTElEQVR4AbVXA3czWBBd/5b11ratz7Zt27Zt1rYRp7b5NbaTfbfbnJO6Tbo95zbJ09yZNzNv5jv8GQwG4AcCK4LTBGkEVAL6LIGCM4fPtoYsyDQV/gvBIoIMAgaAjbMMnMmEDMgaljlE4HuCxQTlWDDZIXq9nq7T6UaP04AZEGFCFmRCNghYg9VUwjUaDePhg3vdly6c65dIJEwjoZqaqtrmpsbqGVrDaAkrEDg9kclNNZNIxMxFC+ZInB1tdBRKeT3mamtrakND/JWrVy0TgZQZV3IaBNLGI9DV1VkVF/ulrb29rcpI5OiRg4PW//xuePrkYRfGrl652Gf192+Ggwf2cGAhMwikgQBlPM3v373dY2P1hyEqIkQeH/e1DeMfP7xrNwqERZYuni9xcrDW5+XlNBlJzhDU7yaahHm3bl4vcLD7R+/m4qBNSIhr7exor9qxbTP/06f37RwOhx0dGSoPDwtU9Pb2VpobHRMSgEYymYz56OG9bj8fD/WD+3e6MaZSqRiIBKCwIK+xuLiwUaFQMPr7+yo5nEG2VqudLQLwfDWjva2tOj09taW1taVap9OaOiZAYzLodTu2b+aHEWeMjgyR371zs0culzEtJgCBB/bv4QQH+qhgAZh7356d3ERyFZzBQTaEV1dV1kaGByvgmL7ebmo3F3st8QldQnxcK+bNJiCTSZnbtm7k42A/H/ch4d6erho4pb3t3/r5c6NkuJL1a1cJsWb71k385uamamNUnDl9YsASC9BqqqpqPd2dNEEBPioajVrP5/NYdXW1Na9fvehcvXKpGLkAgoHIiGAFhGMfBIPAnds3eiyxAK2xob7Gh5jU19tdnZ+X2wSHGz6QKhaLmRnpqc3QOiw0QJmclNCKOeKITCQkRE1OdlaTRVegVqsZp08e+2Zr/afBy8NFs3/vLi7JBa0f3r9tP3xoHwehuGf3dt75c6cH2tpaq7FHpVIy1q9bJcQeWMpiJ+Tz+azr1y71Bfp7qXAoNMP921j9Dj8wwB8wHhMdJi/Izx3S+Mvnj21ITBHhQQoQszgMEdO4X4QZ7js02F/54sXTzqzM9Oa3b151wAlBIjoqTI4kpST5YMum9QKQe/f2dQdIAWYTAJRKJWPj+jVCO5u/DG9evzQ9lCYgVtq0Ya0QVnn29HEXfOTenVs9cMTjxw4NlpWWNLwkhIUCAstsAsTpWOQVlMK0GRlpzaNeSuqnj+/bofE+4icYe/XyeSd+uzrbab08nDW4OuQOzJlFALhw/kw/Dl1CHh8ej8sWEI2yszKbW1uaq9+/e9OBa9i9cxsPa5GSr1y+0BcRFqTA+LBTdlhCgIb3n2ikmxsTIUMYfibOBs38fT3USFQg9/DB3W4TIbRbN6/1Gp03wVILdHd3VYWHBChA4uWLZ50VFWUNu3Zu5SH/B5Ao2UtSNDQ3rhcI+KxlSxZI4Lh4SSsqyhssIgDAyVycbHVDqXhetOzY0YODyHipKUktXC6HbXofom6Az8AyiBwogHmLCOAZRjJavmyR2NXFXgftEBk+Xq4ajJ08cfTbi+dPO2/euNob6O+tgvmxZuOGNUIkKYsJGDUUiUQsKqWiHhbZt3cnFxXT8NswnJyAP4fI4fPBvf/qiMkImNOA0AC8EQMDA5WlJcUNz58+6ZxHXklT4bAOm82qm4QAZcKi1AxC1LjYr62O9lZ6EIBFYCG8K1MVpadnqxMSCYUs1BHQHjVEFSlYQG6qstzKtDGxFChQUc7Xk/ptGo2J9bRaM3N9ZLqt2ejmlPn/NafAqOZ0VtubdKeU2ZRONWkPbcybc//BZnHVLQkHQqfAAAAAElFTkSuQmCC'
   }
 ];
 
@@ -472,14 +472,14 @@ const aiTerminals = [
 const aiTools = [
   ...languageModels,
   ...imageGeneration,
+  ...aiAgentIDEs,
   ...developmentTools,
   ...localAI,
   ...contentCreation,
   ...aiPlatforms,
-  ...businessTools,
+  ...businessProductivity,
   ...privacyTools,
   ...emergingTech,
-  ...aiAgentIDEs,
   ...aiTerminals
 ];
 
@@ -604,10 +604,15 @@ function setupSearch() {
 // Function to perform search
 function performSearch() {
   const searchInput = document.getElementById('searchInput');
-  const query = searchInput.value.trim().toLowerCase();
+  const activeCategoryLink = document.querySelector('.nav-link.active');
   
-  // Get current active category
-  const activeCategory = document.querySelector('.nav-link.active').getAttribute('data-category');
+  if (!searchInput || !activeCategoryLink) {
+    console.error('Required elements not found');
+    return;
+  }
+
+  const query = searchInput.value.trim().toLowerCase();
+  const activeCategory = activeCategoryLink.getAttribute('data-category');
   
   // Filter tools based on both search query and category
   let filteredTools = aiTools;
@@ -617,10 +622,13 @@ function performSearch() {
   }
   
   if (query !== '') {
+    const searchTerms = query.split(' ').filter(term => term.length > 0);
     filteredTools = filteredTools.filter(tool => 
-      tool.name.toLowerCase().includes(query) || 
-      tool.description.toLowerCase().includes(query) || 
-      tool.category.toLowerCase().includes(query)
+      searchTerms.every(term => 
+        tool.name.toLowerCase().includes(term) || 
+        tool.description.toLowerCase().includes(term) || 
+        tool.category.toLowerCase().includes(term)
+      )
     );
   }
   
@@ -630,12 +638,17 @@ function performSearch() {
   }, 300);
 }
 
-// Function to render AI tools
+// Function to render AI tools with improved error handling
 function renderAITools(toolsToRender = aiTools, withAnimation = false) {
   const toolsContainer = document.getElementById('toolsContainer');
+  if (!toolsContainer) {
+    console.error('Tools container not found');
+    return;
+  }
+
   toolsContainer.innerHTML = '';
   
-  if (toolsToRender.length === 0) {
+  if (!toolsToRender || toolsToRender.length === 0) {
     toolsContainer.innerHTML = `
       <div class="no-results">
         <div class="no-results-icon">⚠️</div>
@@ -647,15 +660,22 @@ function renderAITools(toolsToRender = aiTools, withAnimation = false) {
   }
   
   toolsToRender.forEach(tool => {
+    if (!tool.name || !tool.description || !tool.category || !tool.websiteUrl) {
+      console.warn('Invalid tool data:', tool);
+      return;
+    }
+
     const toolCard = document.createElement('a');
     toolCard.className = `tool-card ${withAnimation ? 'tool-appear' : ''}`;
     toolCard.href = tool.websiteUrl;
     toolCard.target = "_blank";
     toolCard.rel = "noopener noreferrer";
     
-    // Create an image element with fallback handling
+    // Create an image element with improved error handling
     const imgElement = `
-      <img src="${tool.iconUrl}" alt="${tool.name} logo" class="tool-icon" 
+      <img src="${tool.iconUrl || 'artwork/default-icon.svg'}" 
+           alt="${tool.name} logo" 
+           class="tool-icon" 
            onerror="this.onerror=null; this.src='artwork/default-icon.svg'; this.classList.add('fallback-icon')">
     `;
     
@@ -677,118 +697,52 @@ function renderAITools(toolsToRender = aiTools, withAnimation = false) {
   });
 }
 
-// Function to add a new AI tool (could be used with a form in the future)
+// Function to add a new AI tool
 function addAITool(name, description, category, websiteUrl, iconUrl) {
   let newTool;
+  let categoryArray;
   
-  // Add to appropriate category array with category-specific ID
-  switch(category) {
-    case 'Language Models & Chatbots':
-      newTool = {
-        languageModelsID: languageModels.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      languageModels.push(newTool);
-      break;
-    case 'Image Generation & Art':
-      newTool = {
-        imageGenerationID: imageGeneration.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      imageGeneration.push(newTool);
-      break;
-    case 'Development & Coding Tools':
-      newTool = {
-        developmentToolsID: developmentTools.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      developmentTools.push(newTool);
-      break;
-    case 'Local & Desktop AI':
-      newTool = {
-        localAIID: localAI.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      localAI.push(newTool);
-      break;
-    case 'Content Creation & Media':
-      newTool = {
-        contentCreationID: contentCreation.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      contentCreation.push(newTool);
-      break;
-    case 'AI Platforms & Infrastructure':
-      newTool = {
-        aiPlatformsID: aiPlatforms.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      aiPlatforms.push(newTool);
-      break;
-    case 'Business & Productivity':
-      newTool = {
-        businessToolsID: businessTools.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      businessTools.push(newTool);
-      break;
-    case 'Privacy & Security':
-      newTool = {
-        privacyToolsID: privacyTools.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      privacyTools.push(newTool);
-      break;
-    case 'VR/AR & Emerging Tech':
-      newTool = {
-        emergingTechID: emergingTech.length + 1,
-        name,
-        description,
-        category,
-        websiteUrl,
-        iconUrl
-      };
-      emergingTech.push(newTool);
-      break;
-    default:
-      console.warn('Unknown category:', category);
-      return null;
+  // Map categories to their respective arrays
+  const categoryMap = {
+    'Language Models & Chatbots': { array: languageModels, idField: 'languageModelsID' },
+    'Image Generation & Art': { array: imageGeneration, idField: 'imageGenerationID' },
+    'Development & Coding Tools': { array: developmentTools, idField: 'id' },
+    'Local & Desktop AI': { array: localAI, idField: 'localAIID' },
+    'Content Creation & Media': { array: contentCreation, idField: 'id' },
+    'AI Platforms & Infrastructure': { array: aiPlatforms, idField: 'aiPlatformsID' },
+    'Business & Productivity': { array: businessProductivity, idField: 'id' },
+    'Privacy & Security': { array: privacyTools, idField: 'privacyToolsID' },
+    'VR/AR & Emerging Tech': { array: emergingTech, idField: 'emergingTechID' },
+    'AI Agent IDE': { array: aiAgentIDEs, idField: 'id' },
+    'AI Terminals': { array: aiTerminals, idField: 'id' }
+  };
+
+  const categoryInfo = categoryMap[category];
+  
+  if (!categoryInfo) {
+    console.error('Unknown category:', category);
+    return null;
   }
+
+  const { array, idField } = categoryInfo;
+  
+  // Create new tool with appropriate ID field
+  newTool = {
+    [idField]: array.length + 1,
+    name,
+    description,
+    category,
+    websiteUrl,
+    iconUrl: iconUrl || 'artwork/default-icon.svg' // Provide default icon if none specified
+  };
+
+  // Add to category array
+  array.push(newTool);
   
   // Add to main array
   aiTools.push(newTool);
+  
+  // Re-render the tools
   renderAITools();
   
   return newTool;
