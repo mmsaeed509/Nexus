@@ -145,6 +145,14 @@ const aiAgentIDEs = [
     category: "AI Agent IDE",
     websiteUrl: "https://codeium.com/windsurf",
     iconUrl: "icons/windsurf.png"
+  },
+  {
+    id: 4,
+    name: "Zed",
+    description: "Zed is a next-generation code editor designed for high-performance collaboration with humans and AI.",
+    category: "AI Agent IDE",
+    websiteUrl: "https://zed.dev",
+    iconUrl: "icons/zed.webp"
   }
 ];
 
