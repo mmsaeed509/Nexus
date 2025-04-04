@@ -521,132 +521,6 @@ const aiTools = [
   ...cliAI
 ];
 
-// Initialize the page
-document.addEventListener('DOMContentLoaded', () => {
-  // Set current year in footer
-  document.getElementById('currentYear').textContent = new Date().getFullYear();
-  
-  // Render AI tools
-  renderAITools(aiTools);
-  
-  // Setup search functionality
-  setupSearch();
-  
-  // Setup category filtering
-  setupCategoryFilter();
-  
-  // Mobile menu functionality
-  setupMobileMenu();
-  setupNavigation();
-});
-
-// Function to setup category filtering
-function setupCategoryFilter() {
-  const navLinks = document.querySelectorAll('.nav-link');
-  let currentCategory = 'all';
-  
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // Remove active class from all links
-      navLinks.forEach(l => l.classList.remove('active'));
-      
-      // Add active class to clicked link
-      this.classList.add('active');
-      
-      // Get category from data attribute
-      currentCategory = this.getAttribute('data-category');
-      
-      // Filter and render tools
-      const filteredTools = currentCategory === 'all' 
-        ? aiTools 
-        : aiTools.filter(tool => tool.category === currentCategory);
-      
-      renderAITools(filteredTools, true);
-      
-      // Close mobile menu if open
-      const mobileMenu = document.querySelector('.nav-links');
-      const mobileToggle = document.querySelector('.mobile-menu-toggle');
-      if (mobileMenu && mobileMenu.classList.contains('active')) {
-        mobileMenu.classList.remove('active');
-        if (mobileToggle) mobileToggle.classList.remove('active');
-      }
-    });
-  });
-}
-
-// Function to setup search
-function setupSearch() {
-  const searchInput = document.getElementById('searchInput');
-  const searchButton = document.getElementById('searchButton');
-  
-  // Search on button click
-  searchButton.addEventListener('click', () => {
-    searchButton.classList.add('searching');
-    performSearch();
-    setTimeout(() => {
-      searchButton.classList.remove('searching');
-    }, 600);
-  });
-  
-  // Search on Enter key press
-  searchInput.addEventListener('keyup', (e) => {
-    if (e.key === 'Enter') {
-      searchButton.classList.add('searching');
-      performSearch();
-      setTimeout(() => {
-        searchButton.classList.remove('searching');
-      }, 600);
-    }
-  });
-  
-  // Add scanning animation when typing
-  searchInput.addEventListener('input', () => {
-    searchInput.classList.add('scanning');
-    setTimeout(() => {
-      searchInput.classList.remove('scanning');
-    }, 800);
-  });
-}
-
-// Function to perform search
-function performSearch() {
-  const searchInput = document.getElementById('searchInput');
-  const activeCategoryLink = document.querySelector('.nav-link.active');
-  
-  if (!searchInput || !activeCategoryLink) {
-    console.error('Required elements not found');
-    return;
-  }
-
-  const query = searchInput.value.trim().toLowerCase();
-  const activeCategory = activeCategoryLink.getAttribute('data-category');
-  
-  // Filter tools based on both search query and category
-  let filteredTools = aiTools;
-  
-  if (activeCategory !== 'all') {
-    filteredTools = filteredTools.filter(tool => tool.category === activeCategory);
-  }
-  
-  if (query !== '') {
-    const searchTerms = query.split(' ').filter(term => term.length > 0);
-    filteredTools = filteredTools.filter(tool => 
-      searchTerms.every(term => 
-        tool.name.toLowerCase().includes(term) || 
-        tool.description.toLowerCase().includes(term) || 
-        tool.category.toLowerCase().includes(term)
-      )
-    );
-  }
-  
-  // Add a small delay before rendering to allow for the button animation
-  setTimeout(() => {
-    renderAITools(filteredTools, true);
-  }, 300);
-}
-
 // Function to render AI tools with improved error handling
 function renderAITools(toolsToRender = aiTools, withAnimation = false) {
   const toolsContainer = document.getElementById('toolsContainer');
@@ -802,81 +676,145 @@ function createMatrixRain() {
 // Initialize Matrix rain effect
 createMatrixRain();
 
-// Mobile Menu Functionality
-function setupMobileMenu() {
-  const navContainer = document.querySelector('.nav-container');
-  const navLinks = document.querySelector('.nav-links');
+// Initialize the page
+document.addEventListener('DOMContentLoaded', () => {
+  // Set current year in footer
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
   
-  // Create mobile menu toggle button
-  const mobileMenuToggle = document.createElement('button');
-  mobileMenuToggle.className = 'mobile-menu-toggle';
-  mobileMenuToggle.innerHTML = '<span></span><span></span><span></span>';
-  mobileMenuToggle.setAttribute('aria-label', 'Toggle navigation menu');
+  // Render AI tools
+  renderAITools(aiTools);
   
-  // Insert toggle button before nav-links
-  navContainer.insertBefore(mobileMenuToggle, navLinks);
+  // Setup search functionality
+  setupSearch();
+  
+  // Setup category filtering
+  setupCategoryFilter();
+  
+  // Mobile menu functionality
+  setupMobileMenu();
+  setupNavigation();
+});
 
-  // Toggle menu on button click
-  mobileMenuToggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-    mobileMenuToggle.classList.toggle('active');
-    navLinks.classList.toggle('active');
-  });
-
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
-      mobileMenuToggle.classList.remove('active');
-      navLinks.classList.remove('active');
-    }
-  });
-
-  // Close menu when clicking a link
-  navLinks.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenuToggle.classList.remove('active');
-      navLinks.classList.remove('active');
+// Function to setup category filtering
+function setupCategoryFilter() {
+  const categoryButtons = document.querySelectorAll('.category-btn');
+  let currentCategory = 'all';
+  
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Remove active class from all buttons
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      // Get category from data attribute
+      currentCategory = this.getAttribute('data-category');
+      
+      // Filter and render tools
+      const filteredTools = currentCategory === 'all' 
+        ? aiTools 
+        : aiTools.filter(tool => tool.category === currentCategory);
+      
+      renderAITools(filteredTools, true);
     });
-  });
-
-  // Prevent menu from closing when clicking inside it
-  navLinks.addEventListener('click', (e) => {
-    e.stopPropagation();
   });
 }
 
-// Enhanced Navigation Functionality
+// Function to setup search
+function setupSearch() {
+  const searchInput = document.getElementById('searchInput');
+  const searchButton = document.getElementById('searchButton');
+  
+  // Search on button click
+  searchButton.addEventListener('click', () => {
+    searchButton.classList.add('searching');
+    performSearch();
+    setTimeout(() => {
+      searchButton.classList.remove('searching');
+    }, 600);
+  });
+  
+  // Search on Enter key press
+  searchInput.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+      searchButton.classList.add('searching');
+      performSearch();
+      setTimeout(() => {
+        searchButton.classList.remove('searching');
+      }, 600);
+    }
+  });
+  
+  // Add scanning animation when typing
+  searchInput.addEventListener('input', () => {
+    searchInput.classList.add('scanning');
+    setTimeout(() => {
+      searchInput.classList.remove('scanning');
+    }, 800);
+  });
+}
+
+// Function to perform search
+function performSearch() {
+  const searchInput = document.getElementById('searchInput');
+  const activeCategoryLink = document.querySelector('.nav-link.active');
+  
+  if (!searchInput || !activeCategoryLink) {
+    console.error('Required elements not found');
+    return;
+  }
+
+  const query = searchInput.value.trim().toLowerCase();
+  const activeCategory = activeCategoryLink.getAttribute('data-category');
+  
+  // Filter tools based on both search query and category
+  let filteredTools = aiTools;
+  
+  if (activeCategory !== 'all') {
+    filteredTools = filteredTools.filter(tool => tool.category === activeCategory);
+  }
+  
+  if (query !== '') {
+    const searchTerms = query.split(' ').filter(term => term.length > 0);
+    filteredTools = filteredTools.filter(tool => 
+      searchTerms.every(term => 
+        tool.name.toLowerCase().includes(term) || 
+        tool.description.toLowerCase().includes(term) || 
+        tool.category.toLowerCase().includes(term)
+      )
+    );
+  }
+  
+  // Add a small delay before rendering to allow for the button animation
+  setTimeout(() => {
+    renderAITools(filteredTools, true);
+  }, 300);
+}
+
+// Function to setup mobile menu
+function setupMobileMenu() {
+  const mobileMenuButton = document.getElementById('mobileMenuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+}
+
+// Function to setup navigation
 function setupNavigation() {
   const navLinks = document.querySelectorAll('.nav-link');
   
-  // Add active state to current category
-  function updateActiveCategory() {
-    const activeCategory = document.querySelector('.nav-link.active');
-    if (activeCategory) {
-      const category = activeCategory.getAttribute('data-category');
-      const filteredTools = category === 'all' 
-        ? aiTools 
-        : aiTools.filter(tool => tool.category === category);
-      renderAITools(filteredTools);
-    }
-  }
-
-  // Initialize with 'all' category
-  const allToolsLink = document.querySelector('.nav-link[data-category="all"]');
-  if (allToolsLink) {
-    allToolsLink.classList.add('active');
-    updateActiveCategory();
-  }
-
-  // Update active category on window resize
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      const mobileMenu = document.querySelector('.nav-links');
-      const mobileToggle = document.querySelector('.mobile-menu-toggle');
-      if (mobileMenu && mobileToggle) {
-        mobileMenu.classList.remove('active');
-        mobileToggle.classList.remove('active');
-      }
-    }
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Remove active class from all links
+      navLinks.forEach(lnk => lnk.classList.remove('active'));
+      
+      // Add active class to clicked link
+      link.classList.add('active');
+    });
   });
-} 
+}
