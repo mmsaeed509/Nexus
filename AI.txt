@@ -86,4 +86,9 @@ AI Terminals
 -----------
 1. Warp (https://www.warp.dev/)
 2. Wave (https://www.waveterm.dev/)
-3. Fig (https://fig.io/) 
+3. Fig (https://fig.io/)
+
+CLI AI
+------
+1. Claude Code (https://github.com/anthropics/claude-code)
+2. Gemini Code (https://github.com/raizamartin/gemini-code) 

@@ -485,6 +485,26 @@ const aiTerminals = [
   }
 ];
 
+// CLI AI
+const cliAI = [
+  {
+    cliAIID: 1,
+    name: 'Claude Code',
+    description: 'Anthropic\'s agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.',
+    category: 'CLI AI',
+    websiteUrl: 'https://github.com/anthropics/claude-code',
+    iconUrl: 'icons/claude-code.png'
+  },
+  {
+    cliAIID: 2,
+    name: 'Gemini Code',
+    description: 'Google\'s Gemini 2.5 Pro code assistant for terminal-based development.',
+    category: 'CLI AI',
+    websiteUrl: 'https://github.com/raizamartin/gemini-code',
+    iconUrl: 'icons/gemini-code.png'
+  }
+];
+
 // Combine all tools into a single array
 const aiTools = [
   ...languageModels,
@@ -497,7 +517,8 @@ const aiTools = [
   ...businessProductivity,
   ...privacyTools,
   ...emergingTech,
-  ...aiTerminals
+  ...aiTerminals,
+  ...cliAI
 ];
 
 // Initialize the page
@@ -702,7 +723,8 @@ function addAITool(name, description, category, websiteUrl, iconUrl) {
     'Privacy & Security': { array: privacyTools, idField: 'privacyToolsID' },
     'VR/AR & Emerging Tech': { array: emergingTech, idField: 'emergingTechID' },
     'AI Agent IDE': { array: aiAgentIDEs, idField: 'id' },
-    'AI Terminals': { array: aiTerminals, idField: 'id' }
+    'AI Terminals': { array: aiTerminals, idField: 'id' },
+    'CLI AI': { array: cliAI, idField: 'cliAIID' }
   };
 
   const categoryInfo = categoryMap[category];
