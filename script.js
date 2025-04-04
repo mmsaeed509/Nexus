@@ -154,6 +154,15 @@ const aiAgentIDEs = [
     websiteUrl: "https://zed.dev",
     iconUrl: "icons/zed.webp"
   }
+  ,
+  {
+    id: 5,
+    name: "TRAE",
+    description: "Trae is an adaptive AI IDE that transforms how you work, collaborating with you to run faster.",
+    category: "AI Agent IDE",
+    websiteUrl: "https://www.trae.ai",
+    iconUrl: "icons/Trae.avif"
+  }
 ];
 
 // Development & Coding Tools

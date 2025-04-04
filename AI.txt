@@ -1,0 +1,89 @@
+AI Tools Directory
+=================
+
+Language Models & Chatbots
+-------------------------
+1. ChatGPT (https://chat.openai.com/)
+2. Claude (https://claude.ai/)
+3. Gemini (https://gemini.google.com/app)
+4. KimiAI (https://kimi.moonshot.cn/)
+5. Qwen (https://chat.qwen.ai/)
+6. Grok (https://grok.com/)
+7. Le Chat - Mistral AI (https://chat.mistral.ai/)
+8. Meta AI (https://www.meta.ai/)
+
+Image Generation & Art
+---------------------
+1. Midjourney (https://www.midjourney.com/)
+2. Stable Diffusion (https://stablediffusionweb.com/)
+3. Leonardo AI (https://app.leonardo.ai/)
+4. Civit AI (https://civitai.com/)
+5. Ideogram (https://ideogram.ai/)
+6. DALL-E (https://labs.openai.com/)
+
+AI Agent IDEs
+------------
+1. Junie AI (https://www.jetbrains.com/junie/)
+2. Cursor (https://www.cursor.com/)
+3. Windsurf (https://codeium.com/windsurf)
+4. Zed (https://zed.dev)
+
+Development & Coding Tools
+------------------------
+1. GitHub Copilot (https://github.com/features/copilot)
+2. Tabnine (https://www.tabnine.com/)
+3. Codeium (https://codeium.com/)
+4. Amazon CodeWhisperer (https://aws.amazon.com/codewhisperer/)
+5. Replit Ghost (https://replit.com/ghost)
+6. CodeGeeX (https://codegeex.cn/)
+7. Chat2DB (https://chat2db.com/)
+8. Marblism (https://marblism.com)
+9. Code to Flow (https://codetoflow.com)
+10. SinglebaseCloud (https://singlebase.cloud)
+
+Local & Desktop AI
+-----------------
+1. Jan AI (https://jan.ai/)
+2. Msty (https://msty.app/)
+3. LM Studio (https://lmstudio.ai/)
+4. OpenWebUI (https://github.com/open-webui/open-webui)
+
+Content Creation & Media
+----------------------
+1. Synthesia (https://www.synthesia.io/)
+2. Rytr (https://rytr.me/)
+3. Let's Enhance (https://letsenhance.io/)
+4. FairyTailAI (https://fairytailai.com/)
+5. Content Studio AI (https://contentstudioai.com)
+
+AI Platforms & Infrastructure
+---------------------------
+1. DeepSeek (https://chat.deepseek.com/)
+2. DeepSite (https://huggingface.co/spaces/enzostvs/deepsite)
+3. Weights (https://www.weights.com/)
+4. HuggingFace (https://huggingface.co/)
+5. Fragments by E2B (https://github.com/e2b-dev/fragments)
+6. Bolt.DIY (https://github.com/stackblitz-labs/bolt.diy)
+7. Janus (https://github.com/deepseek-ai/Janus)
+
+Business & Productivity
+---------------------
+1. DraftLab (https://draftlab.ai/)
+2. Plus AI for Google Slides (https://www.plusdocs.com/plus-ai-for-google-slides)
+3. Documind AI (https://documind.chat)
+4. guidde (https://www.guidde.com)
+5. Kolega (https://kolega.ai)
+
+Privacy & Security
+----------------
+1. OnionGPT (http://oniongpt6lntsoztgylhju7nmqedlq6fjexe55z327lmxyae3nutlyad.onion/)
+
+VR/AR & Emerging Tech
+-------------------
+1. Manus (https://manus.im/)
+
+AI Terminals
+-----------
+1. Warp (https://www.warp.dev/)
+2. Wave (https://www.waveterm.dev/)
+3. Fig (https://fig.io/) 
