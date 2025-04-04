@@ -430,6 +430,14 @@ const businessProductivity = [
     category: "Business & Productivity",
     websiteUrl: "https://kolega.ai",
     iconUrl: "icons/kolega.png"
+  },
+  {
+    id: 6,
+    name: "Genspark",
+    description: "Technology services company providing software development, testing, and consulting services.",
+    category: "Business & Productivity",
+    websiteUrl: "https://www.genspark.ai/",
+    iconUrl: "icons/genspark.png"
   }
 ];
 
@@ -760,15 +768,15 @@ function setupSearch() {
 // Function to perform search
 function performSearch() {
   const searchInput = document.getElementById('searchInput');
-  const activeCategoryLink = document.querySelector('.nav-link.active');
+  const activeCategoryButton = document.querySelector('.category-btn.active');
   
-  if (!searchInput || !activeCategoryLink) {
+  if (!searchInput || !activeCategoryButton) {
     console.error('Required elements not found');
     return;
   }
 
   const query = searchInput.value.trim().toLowerCase();
-  const activeCategory = activeCategoryLink.getAttribute('data-category');
+  const activeCategory = activeCategoryButton.getAttribute('data-category');
   
   // Filter tools based on both search query and category
   let filteredTools = aiTools;
