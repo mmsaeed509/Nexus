@@ -144,7 +144,7 @@ const aiAgentIDEs = [
     description: "Codeium's agentic IDE that combines AI capabilities with a seamless development experience.",
     category: "AI Agent IDE",
     websiteUrl: "https://codeium.com/windsurf",
-    iconUrl: "icons/windsurf.png"
+    iconUrl: "icons/windsurf.svg"
   },
   {
     id: 4,

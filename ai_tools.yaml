@@ -1,0 +1,417 @@
+language_models:
+  - languageModelsID: 1
+    name: ChatGPT
+    description: Advanced conversational AI for text generation, translation, and more.
+    category: Language Models & Chatbots
+    websiteUrl: https://chat.openai.com/
+    iconUrl: https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg
+
+  - languageModelsID: 2
+    name: Claude
+    description: Anthropic's advanced AI assistant focused on helpfulness and harmlessness.
+    category: Language Models & Chatbots
+    websiteUrl: https://claude.ai/
+    iconUrl: https://claude.ai/favicon.ico
+
+  - languageModelsID: 3
+    name: Gemini
+    description: Google's most capable AI model, multimodal reasoning with text, images, and code.
+    category: Language Models & Chatbots
+    websiteUrl: https://gemini.google.com/app
+    iconUrl: https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg
+
+  - languageModelsID: 4
+    name: KimiAI
+    description: Intelligent conversational AI with strong contextual understanding.
+    category: Language Models & Chatbots
+    websiteUrl: https://kimi.moonshot.cn/
+    iconUrl: icons/kimiai.avif
+
+  - languageModelsID: 5
+    name: Qwen
+    description: Alibaba's conversational AI model with multilingual capabilities.
+    category: Language Models & Chatbots
+    websiteUrl: https://chat.qwen.ai/
+    iconUrl: icons/qwen.png
+
+  - languageModelsID: 6
+    name: Grok
+    description: xAI's conversational model with real-time data access and unique personality.
+    category: Language Models & Chatbots
+    websiteUrl: https://grok.com/
+    iconUrl: icons/Grok.webp
+
+  - languageModelsID: 7
+    name: Le Chat - Mistral AI
+    description: French AI startup offering powerful open models with competitive performance.
+    category: Language Models & Chatbots
+    websiteUrl: https://chat.mistral.ai/
+    iconUrl: icons/mistral-ai.png
+
+  - languageModelsID: 8
+    name: Meta AI
+    description: Meta's AI assistant integrated across Meta apps and services.
+    category: Language Models & Chatbots
+    websiteUrl: https://www.meta.ai/
+    iconUrl: icons/metaai.jpg
+
+image_generation:
+  - imageGenerationID: 1
+    name: Midjourney
+    description: Generative AI creating images from textual descriptions.
+    category: Image Generation & Art
+    websiteUrl: https://www.midjourney.com/
+    iconUrl: icons/Midjourney.png
+
+  - imageGenerationID: 2
+    name: Stable Diffusion
+    description: Open-source text-to-image model for generating detailed visuals.
+    category: Image Generation & Art
+    websiteUrl: https://stablediffusionweb.com/
+    iconUrl: https://stablediffusionweb.com/images/logo.png
+
+  - imageGenerationID: 3
+    name: Leonardo AI
+    description: Generate production-quality creative assets with AI.
+    category: Image Generation & Art
+    websiteUrl: https://app.leonardo.ai/
+    iconUrl: https://app.leonardo.ai/favicon.ico
+
+  - imageGenerationID: 4
+    name: Civit AI
+    description: Community hub for Stable Diffusion models, prompts and resources.
+    category: Image Generation & Art
+    websiteUrl: https://civitai.com/
+    iconUrl: https://civitai.com/favicon.ico
+
+  - imageGenerationID: 5
+    name: Ideogram
+    description: AI art generator specializing in text rendering and typography.
+    category: Image Generation & Art
+    websiteUrl: https://ideogram.ai/
+    iconUrl: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEVHcEz///8AAABTU1P////////////////////////s7Oz29vZiYmIQEBAeHh7h4eHT09NCQkItLS3FxcV0dHQ6Ojq0tLSDg4OmpqaWlpZCl/6SAAAACnRSTlMA////ikVE3hjrhwjMiwAAARVJREFUKJF9UwuygyAQg2BfLX8UxN7/om+BYrW2ZkadJRp2Q2SMjcOdn3AfRka4Pc5UweNG3/3giB3ZsCsVX2IKeX6VA3vv5wADTBOgVduXvb+TIlhoKb2Abis7svAWjh4ay4EkTVJVM3T2fEXye1JGrXWkZUIoN3+SdQaLNxB+heikTOigzTJoFoGNjKIBWKmiazahk0rJBmeMLzMmU/stpE4pFCTNF1ibFbco0o2cXijklECKztpNVnZZSyPoHw0ZPKkZGuVZHfwyCs1CZrkvJtTFOVujdqQq9mWyrx1mPNi3Gb/wGEs/Z1lpSdaW9+LHedbDFtLDivCsWTjGhDJSzekxOQZM5qB9L4fraLK/i1Bf/Q7/6CUPuCjtwm8AAAAASUVORK5CYII=
+
+  - imageGenerationID: 6
+    name: DALL-E
+    description: OpenAI's advanced AI system that creates realistic images and art from natural language descriptions.
+    category: Image Generation & Art
+    websiteUrl: https://labs.openai.com/
+    iconUrl: https://labs.openai.com/favicon.ico
+
+ai_agent_ides:
+  - id: 1
+    name: Junie AI
+    description: JetBrains' AI-powered IDE assistant that helps developers write better code faster.
+    category: AI Agent IDE
+    websiteUrl: https://www.jetbrains.com/junie/
+    iconUrl: icons/junie.png
+
+  - id: 2
+    name: Cursor
+    description: The AI-first code editor that helps you code faster and smarter with built-in AI assistance.
+    category: AI Agent IDE
+    websiteUrl: https://www.cursor.com/
+    iconUrl: icons/cursor.png
+
+  - id: 3
+    name: Windsurf
+    description: Codeium's agentic IDE that combines AI capabilities with a seamless development experience.
+    category: AI Agent IDE
+    websiteUrl: https://codeium.com/windsurf
+    iconUrl: icons/windsurf.svg
+
+  - id: 4
+    name: Zed
+    description: Zed is a next-generation code editor designed for high-performance collaboration with humans and AI.
+    category: AI Agent IDE
+    websiteUrl: https://zed.dev
+    iconUrl: icons/zed.webp
+
+  - id: 5
+    name: TRAE
+    description: Trae is an adaptive AI IDE that transforms how you work, collaborating with you to run faster.
+    category: AI Agent IDE
+    websiteUrl: https://www.trae.ai
+    iconUrl: icons/Trae.avif
+
+development_tools:
+  - id: 1
+    name: GitHub Copilot
+    description: AI pair programmer that helps you write better code faster.
+    category: Development & Coding Tools
+    websiteUrl: https://github.com/features/copilot
+    iconUrl: icons/github-copilot.png
+
+  - id: 2
+    name: Tabnine
+    description: AI code completion tool that helps developers write code faster.
+    category: Development & Coding Tools
+    websiteUrl: https://www.tabnine.com/
+    iconUrl: icons/tabnine.png
+
+  - id: 3
+    name: Codeium
+    description: AI-powered code completion and chat assistant for developers.
+    category: Development & Coding Tools
+    websiteUrl: https://codeium.com/
+    iconUrl: icons/codeium.png
+
+  - id: 4
+    name: Amazon CodeWhisperer
+    description: AI-powered code suggestions and security scanning.
+    category: Development & Coding Tools
+    websiteUrl: https://aws.amazon.com/codewhisperer/
+    iconUrl: icons/codewhisperer.png
+
+  - id: 5
+    name: Replit Ghost
+    description: AI pair programmer for the Replit development environment.
+    category: Development & Coding Tools
+    websiteUrl: https://replit.com/ghost
+    iconUrl: icons/replit-ghost.png
+
+  - id: 6
+    name: CodeGeeX
+    description: Multilingual code generation and completion tool.
+    category: Development & Coding Tools
+    websiteUrl: https://codegeex.cn/
+    iconUrl: icons/codegeex.png
+
+  - id: 7
+    name: Chat2DB
+    description: AI-powered database management and query tool.
+    category: Development & Coding Tools
+    websiteUrl: https://chat2db.com/
+    iconUrl: icons/chat2db.png
+
+  - id: 8
+    name: Marblism
+    description: Generate a SaaS boilerplate from a prompt.
+    category: Development & Coding Tools
+    websiteUrl: https://marblism.com
+    iconUrl: icons/marblism.png
+
+  - id: 9
+    name: Code to Flow
+    description: Visualize and understand code flow with AI-powered flowcharts.
+    category: Development & Coding Tools
+    websiteUrl: https://codetoflow.com
+    iconUrl: icons/codetoflow.png
+
+  - id: 10
+    name: SinglebaseCloud
+    description: AI-powered backend platform with Vector DB, DocumentDB, and Auth.
+    category: Development & Coding Tools
+    websiteUrl: https://singlebase.cloud
+    iconUrl: icons/singlebasecloud.png
+
+local_ai:
+  - localAIID: 1
+    name: Jan AI
+    description: Open-source desktop app for running local LLMs with a user-friendly interface.
+    category: Local & Desktop AI
+    websiteUrl: https://jan.ai/
+    iconUrl: https://jan.ai/favicon.ico
+
+  - localAIID: 2
+    name: Msty
+    description: Desktop application for running and fine-tuning language models locally.
+    category: Local & Desktop AI
+    websiteUrl: https://msty.app/
+    iconUrl: https://msty.app/favicon.ico
+
+  - localAIID: 3
+    name: LM Studio
+    description: Desktop app for running local and private large language models with an intuitive UI.
+    category: Local & Desktop AI
+    websiteUrl: https://lmstudio.ai/
+    iconUrl: icons/lmstudio.webp
+
+  - localAIID: 4
+    name: OpenWebUI
+    description: User-friendly web interface for Ollama, supporting multiple models and providing a modern chat experience.
+    category: Local & Desktop AI
+    websiteUrl: https://github.com/open-webui/open-webui
+    iconUrl: https://github.com/open-webui/open-webui/raw/main/static/logo.png
+
+content_creation:
+  - id: 1
+    name: Synthesia
+    description: AI video creation platform for generating professional videos.
+    category: Content Creation & Media
+    websiteUrl: https://www.synthesia.io/
+    iconUrl: icons/synthesia.png
+
+  - id: 2
+    name: Rytr
+    description: AI writing assistant for content creation and automation.
+    category: Content Creation & Media
+    websiteUrl: https://rytr.me/
+    iconUrl: icons/rytr.png
+
+  - id: 3
+    name: Let's Enhance
+    description: AI-powered image enhancement and upscaling tool.
+    category: Content Creation & Media
+    websiteUrl: https://letsenhance.io/
+    iconUrl: icons/letsenhance.png
+
+  - id: 4
+    name: FairyTailAI
+    description: AI-powered personalized bedtime story generator.
+    category: Content Creation & Media
+    websiteUrl: https://fairytailai.com/
+    iconUrl: icons/fairytailai.png
+
+  - id: 5
+    name: Content Studio AI
+    description: AI-powered faceless video creation platform.
+    category: Content Creation & Media
+    websiteUrl: https://contentstudioai.com
+    iconUrl: icons/contentstudioai.png
+
+ai_platforms:
+  - aiPlatformsID: 1
+    name: DeepSeek
+    description: AI platform focused on deep learning research and applications.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://chat.deepseek.com/
+    iconUrl: icons/deepseek.svg
+
+  - aiPlatformsID: 2
+    name: DeepSite
+    description: AI platform focused on deep learning research and applications.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://huggingface.co/spaces/enzostvs/deepsite
+    iconUrl: icons/DeepSite.svg
+
+  - aiPlatformsID: 3
+    name: Weights
+    description: Platform for discovering, training and deploying open source AI models.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://www.weights.com/
+    iconUrl: https://www.weights.com/favicon.ico
+
+  - aiPlatformsID: 4
+    name: HuggingFace
+    description: Platform for discovering, sharing and collaborating on machine learning models.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://huggingface.co/
+    iconUrl: https://huggingface.co/favicon.ico
+
+  - aiPlatformsID: 5
+    name: Fragments by E2B
+    description: Open-source Next.js template for building apps fully generated by AI with secure code execution.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://github.com/e2b-dev/fragments
+    iconUrl: icons/Fragments.png
+
+  - aiPlatformsID: 6
+    name: Bolt.DIY
+    description: Open-source tool for building full-stack web applications using any LLM, with in-browser code execution.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://github.com/stackblitz-labs/bolt.diy
+    iconUrl: icons/Bolt.DIY.png
+
+  - aiPlatformsID: 7
+    name: Janus
+    description: Unified multimodal understanding and generation model for handling various types of data and tasks.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://github.com/deepseek-ai/Janus
+    iconUrl: https://github.com/deepseek-ai/Janus/raw/main/assets/logo.png
+
+business_productivity:
+  - id: 1
+    name: DraftLab
+    description: AI-powered Gmail assistant for email management.
+    category: Business & Productivity
+    websiteUrl: https://draftlab.ai/
+    iconUrl: icons/draftlab.png
+
+  - id: 2
+    name: Plus AI for Google Slides
+    description: Create AI-powered presentations in Google Slides.
+    category: Business & Productivity
+    websiteUrl: https://www.plusdocs.com/plus-ai-for-google-slides
+    iconUrl: icons/plusai.png
+
+  - id: 3
+    name: Documind AI
+    description: Chat with PDFs using GPT-4 technology.
+    category: Business & Productivity
+    websiteUrl: https://documind.chat
+    iconUrl: icons/documind.png
+
+  - id: 4
+    name: guidde
+    description: AI-powered video documentation creation tool.
+    category: Business & Productivity
+    websiteUrl: https://www.guidde.com
+    iconUrl: icons/guidde.png
+
+  - id: 5
+    name: Kolega
+    description: AI-powered employees for Slack and Teams.
+    category: Business & Productivity
+    websiteUrl: https://kolega.ai
+    iconUrl: icons/kolega.png
+
+  - id: 6
+    name: Genspark
+    description: Technology services company providing software development, testing, and consulting services.
+    category: Business & Productivity
+    websiteUrl: https://www.genspark.ai/
+    iconUrl: icons/genspark.png
+
+privacy_tools:
+  - privacyToolsID: 1
+    name: OnionGPT
+    description: Anonymous AI assistant accessible through the Tor network.
+    category: Privacy & Security
+    websiteUrl: http://oniongpt6lntsoztgylhju7nmqedlq6fjexe55z327lmxyae3nutlyad.onion/
+    iconUrl: https://www.torproject.org/static/images/favicon/favicon.ico
+
+emerging_tech:
+  - emergingTechID: 1
+    name: Manus
+    description: AI-powered hand tracking and haptic technology for immersive VR/AR experiences.
+    category: AI Agent
+    websiteUrl: https://manus.im/
+    iconUrl: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFTElEQVR4AbVXA3czWBBd/5b11ratz7Zt27Zt1rYRp7b5NbaTfbfbnJO6Tbo95zbJ09yZNzNv5jv8GQwG4AcCK4LTBGkEVAL6LIGCM4fPtoYsyDQV/gvBIoIMAgaAjbMMnMmEDMgaljlE4HuCxQTlWDDZIXq9nq7T6UaP04AZEGFCFmRCNghYg9VUwjUaDePhg3vdly6c65dIJEwjoZqaqtrmpsbqGVrDaAkrEDg9kclNNZNIxMxFC+ZInB1tdBRKeT3mamtrakND/JWrVy0TgZQZV3IaBNLGI9DV1VkVF/ulrb29rcpI5OiRg4PW//xuePrkYRfGrl652Gf192+Ggwf2cGAhMwgkgQBlPM3v373dY2P1hyEqIkQeH/e1DeMfP7xrNwqERZYuni9xcrDW5+XlNBlJzhDU7yaahHm3bl4vcLD7R+/m4qBNSIhr7exor9qxbTP/06f37RwOhx0dGSoPDwtU9Pb2VpobHRMSgEYymYz56OG9bj8fD/WD+3e6MaZSqRiIBKCwIK+xuLiwUaFQMPr7+yo5nEG2VqudLQLwfDWjva2tOj09taW1taVap9OaOiZAYzLodTu2b+aHEWeMjgyR371zs0culzEtJgCBB/bv4QQH+qhgAZh7356d3ERyFZzBQTaEV1dV1kaGByvgmL7ebmo3F3st8QldQnxcK+bNJiCTSZnbtm7k42A/H/ch4d6erho4pb3t3/r5c6NkuJL1a1cJsWb71k385uamamNUnDl9YsASC9BqqqpqPd2dNEEBPioajVrP5/NYdXW1Na9fvehcvXKpGLkAgoHIiGAFhGMfBIPAnds3eiyxAK2xob7Gh5jU19tdnZ+X2wSHGz6QKhaLmRnpqc3QOiw0QJmclNCKOeKITCQkRE1OdlaTRVegVqsZp08e+2Zr/afBy8NFs3/vLi7JBa0f3r9tP3xoHwehuGf3dt75c6cH2tpaq7FHpVIy1q9bJcQeWMpiJ+Tz+azr1y71Bfp7qXAoNMP921j9Dj8wwB8wHhMdJi/Izx3S+Mvnj21ITBHhQQoQszgMEdO4X4QZ7js02F/54sXTzqzM9Oa3b151wAlBIjoqTI4kpST5YMum9QKQe/f2dQdIAWYTAJRKJWPj+jVCO5u/DG9evzQ9lCYgVtq0Ya0QVnn29HEXfOTenVs9cMTjxw4NlpWWNLwkhIUCAstsAsTpWOQVlMK0GRlpzaNeSuqnj+/bofE+4icYe/XyeSd+uzrbab08nDW4OuQOzJlFALhw/kw/Dl1CHh8ej8sWEI2yszKbW1uaq9+/e9OBa9i9cxsPa5GSr1y+0BcRFqTA+LBTdlhCgIb3n2ikmxsTIUMYfibOBs38fT3USFQg9/DB3W4TIbRbN6/1Gp03wVILdHd3VYWHBChA4uWLZ50VFWUNu3Zu5SH/B5Ao2UtSNDQ3rhcI+KxlSxZI4Lh4SSsqyhssIgDAyVycbHVDqXhetOzY0YODyHipKUktXC6HbXofom6Az8AyiBwogHmLCOAZRjJavmyR2NXFXgftEBk+Xq4ajJ08cfTbi+dPO2/euNob6O+tgvmxZuOGNUIkKYsJGDUUiUQsKqWiHhbZt3cnFxXT8NswnJyAP4fI4fPBvf/qiMkImNOA0AC8EQMDA5WlJcUNz58+6ZxHXklT4bAOm82qm4QAZcKi1AxC1LjYr62O9lZ6EIBFYCG8K1MVpadnqxMSCYUs1BHQHjVEFSlYQG6qstzKtDGxFChQUc7Xk/ptGo2J9bRaM3N9ZLqt2ejmlPn/NafAqOZ0VtubdKeU2ZRONWkPbcybc//BZnHVLQkHQqfAAAAAElFTkSuQmCC
+
+ai_terminals:
+  - id: 1
+    name: Warp
+    description: The intelligent terminal that combines AI and your dev team's knowledge in one fast, intuitive interface.
+    category: AI Terminals
+    websiteUrl: https://www.warp.dev/
+    iconUrl: icons/warp.png
+
+  - id: 2
+    name: Wave
+    description: An open-source terminal with superpowers, integrating file previews, file editing, AI, web browsing, and workspace organization.
+    category: AI Terminals
+    websiteUrl: https://www.waveterm.dev/
+    iconUrl: icons/wave.png
+
+  - id: 3
+    name: Fig
+    description: AI-powered terminal with intelligent command suggestions and autocomplete.
+    category: AI Terminals
+    websiteUrl: https://fig.io/
+    iconUrl: icons/fig.png
+
+cli_ai:
+  - cliAIID: 1
+    name: Claude Code
+    description: Anthropic's agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.
+    category: CLI AI
+    websiteUrl: https://github.com/anthropics/claude-code
+    iconUrl: icons/claude-code.png
+
+  - cliAIID: 2
+    name: Gemini Code
+    description: Google's Gemini 2.5 Pro code assistant for terminal-based development.
+    category: CLI AI
+    websiteUrl: https://github.com/raizamartin/gemini-code
+    iconUrl: icons/gemini-code.png 
