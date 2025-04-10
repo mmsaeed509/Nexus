@@ -162,6 +162,14 @@ const aiAgentIDEs = [
     category: "AI Agent IDE",
     websiteUrl: "https://www.trae.ai",
     iconUrl: "icons/Trae.avif"
+  },
+  {
+    id: 6,
+    name: "FireBase Studio",
+    description: "FireBase Studio is a Code agent from Google to help you build apps.",
+    category: "AI Agent IDE",
+    websiteUrl: "https://studio.firebase.google.com",
+    iconUrl: "icons/FireBaseStudio.png"
   }
 ];
 
